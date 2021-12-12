@@ -1,0 +1,72 @@
+
+/*RexxTV*/
+.rexxtv{
+    background-color: #111010;
+    border: 3px solid #00C85F;
+    border-radius: 30px;
+    margin-top:5%;
+   
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+
+    .rexxtvContainerLeft{
+        width: 20vw;
+    
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+
+        .rexxtvTitulo{
+            padding: 10% 2% 8% 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 15vw;
+
+            h2{
+                font-size: 1.9rem;
+            }
+
+            .botonEnvivo{
+                color: #E8F6D0;
+                border: 2px solid #00C85F;
+                border-radius: 6px;
+                background-color:#00C85F;
+                animation-name: pulse;
+                animation-iteration-count: infinite;
+                animation-timing-function: ease-in;
+                animation-duration: 2s;
+            }
+            
+            @keyframes pulse {
+                0% {
+                    transform: scale(1);
+                }
+                25%{
+                    transform: scale(1.2);
+                }
+                50%{
+                    transform: scale(1.5);
+                }
+                75%{
+                    transform: scale(1.2);
+                }
+                100%{
+                    transform: scale(1);
+                }
+            }
+        }
+
+        .rexxtvTexto{
+            font-size: 1.4rem;
+            line-height: 2rem;
+        }
+    }
+
+    .rexxtvImagen{
+        padding: 4% 0 5% 0;
+    }
+
+}

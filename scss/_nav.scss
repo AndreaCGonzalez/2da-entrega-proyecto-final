@@ -1,0 +1,43 @@
+/*MENU*/
+
+
+.navbar{
+    background-color:#00C85F;
+
+    .container{
+        .navbar-collapse{
+            .nav-link{
+                color: #E8F6D0;
+                font-size: 1.3rem;
+
+            }
+        }
+    }
+}
+
+// .header{
+//     position:sticky;
+//     top: 0;
+//     background-color:#00C85F;
+//     display:flex;
+//     align-items: center;
+// }
+
+// .menu{
+//     width: 100vw;
+// }
+
+// .menuOpciones{
+//     list-style-type: none;
+//     display: flex;
+//     justify-content: space-evenly;
+//     align-items: center;
+
+// }
+// .menuOpciones li{
+//    display: inline-block;
+// }
+
+// .menuOpciones li a{
+//     font-size: 1.16rem;
+// }

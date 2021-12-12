@@ -1,0 +1,55 @@
+/* SOBRE MI */
+.contenedor{
+
+    .contenedorBiografia{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding-bottom: 4%;
+        padding-top: 4%;
+    
+        .biografiaImagen{
+            width: 25%;
+         }
+    
+         .quiensoy{
+            width: 55vw;
+            padding: 2%;
+            border: solid 2px #00C85F;
+            border-radius: 20px;
+    
+            .biografiaTitulo{
+                padding-bottom: 2%;
+                font-size: 1.23rem;
+            }
+            
+            .biografiaDescripcion{
+                text-align: justify;
+                font-size: 1.2rem;
+            }
+        }
+    
+        .hazdetucuerpo{
+            width: 55vw;
+            padding: 2%;
+            border: solid 2px #00C85F;
+            border-radius: 20px;
+    
+            .biografiaTitulo{
+                padding-bottom: 2%;
+                font-size: 1.23rem;
+            }
+            
+            .biografiaDescripcion{
+                text-align: justify;
+                font-size: 1.2rem;
+            }
+        }
+    }
+}
+
+.footer{
+    background-color: #111010;
+}
+
+
