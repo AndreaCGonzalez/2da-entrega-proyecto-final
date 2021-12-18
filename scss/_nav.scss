@@ -2,12 +2,12 @@
 
 
 .navbar{
-    background-color:#00C85F;
+    background-color: $colorDetashes;
 
     .container{
         .navbar-collapse{
             .nav-link{
-                color: #E8F6D0;
+                color: $lettering;
                 font-size: 1.3rem;
 
             }

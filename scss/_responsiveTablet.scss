@@ -4,11 +4,11 @@
     .productos{        
 
         h1{
-            font-size: 1.45rem;
+            font-size: $size22;
         }
 
         h2{            
-            font-size: 1.4rem;
+            font-size: $size22;
         }
 
         .planesContainer{
@@ -23,11 +23,11 @@
             
                 .planTitulo{
                     padding-bottom: 6%;
-                    font-size: 1.25rem;
+                    font-size: $size18;
                 }    
                 
                 .planDescripcion .queIncluye{
-                    font-size: 1.2rem;
+                    font-size: $size18;
                 }
             }             
         } 
@@ -43,7 +43,7 @@
                 width: 18vw;
 
                 h2{
-                    font-size: 1.7rem;
+                    font-size: $size26;
                 }               
             }
         }
@@ -77,7 +77,7 @@
 
         h2{
             padding-bottom: 2.5%;
-            font-size: 1.4rem;
+            font-size: $size22;
         }
 
         .planesContainer{
@@ -89,12 +89,12 @@
         
             .planTitulo{
                 padding-bottom: 10%;
-                font-size: 1.45rem;
+                font-size: $size22;
             }
 
             
             .planDescripcion .queIncluye{
-                font-size: 1.2rem;
+                font-size: $size18;
             }
         }
     }
@@ -115,7 +115,7 @@
                 width: 20vw;
 
                 h2{
-                    font-size: 1.8rem;
+                    font-size: $size28;
                 }               
             }
         }
@@ -148,13 +148,13 @@
              .quiensoy{
                 width: 43vw;                
 
-                .biografiaTitulo{
+                .biografiaTituloUp{
                     padding-bottom: 2%;
-                    font-size: 1.16rem;
+                    font-size: $size18;
                 }
                 
-                .biografiaDescripcion{                   
-                    font-size: 1.38rem;
+                .biografiaDescripcionUp{                   
+                    font-size: $size22;
                 }
             }
         
@@ -162,11 +162,11 @@
                 width: 43vw;               
         
                 .biografiaTitulo{                   
-                    font-size: 1.16rem;
+                    font-size: $size18;
                 }
                 
                 .biografiaDescripcion{                    
-                    font-size: 1.38rem;
+                    font-size: $size22;
                 }
             }
         }
@@ -185,7 +185,7 @@
 
             h1{
                 padding: 4% 0 4% 0;
-                font-size: 1.45rem;
+                font-size: $size22;
                 text-align: center;
             }
     
@@ -224,7 +224,7 @@
     .productos{    
 
         h1, h2{
-            font-size: 1.2rem;
+            font-size: $size18;
         }
 
         .planesContainer{
@@ -237,16 +237,16 @@
                 width: 38vw;
 
                 .planTitulo{                        
-                    font-size: 1.2rem;
+                    font-size:$size20;
                 }
                     
                 .planDescripcion {
-                    font-size: 1.2rem;
+                    font-size: $size18;
                     line-height: 1.4rem;
                 }
 
                 .queIncluye{
-                    font-size: 1rem;
+                    font-size: $size16;
                 }
             }
         }
@@ -269,7 +269,7 @@
                 width: 25vw;
 
                 h2{
-                    font-size: 1.8rem;
+                    font-size: $size28;
                 }
             }
         }             
@@ -278,7 +278,7 @@
 
     /* SECCION 4 CONTACTO */
     .contactoLista h2{
-        font-size: 1rem;
+        font-size: $size16;
         text-align: center;
     }
 
@@ -298,12 +298,12 @@
                 width: 50vw;
                 border: none;
 
-                .biografiaTitulo{
-                    font-size: 1rem;
+                .biografiaTituloUp{
+                    font-size: $size16;
                 }
 
-                .biografiaDescripcion{
-                    font-size: 1.2rem;
+                .biografiaDescripcionUp{
+                    font-size: $size18;
                     line-height: 1.6rem;
                 }
             }
@@ -313,11 +313,11 @@
                 border: none;
 
                 .biografiaTitulo{
-                    font-size: 1rem;
+                    font-size: $size16;
                 }
 
                 .biografiaDescripcion{
-                    font-size: 1.2rem;
+                    font-size: $size18;
                     line-height: 1.6rem;
                 }
             }

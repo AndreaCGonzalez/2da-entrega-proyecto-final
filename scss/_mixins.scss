@@ -1,0 +1,12 @@
+
+@mixin quiensoy($pad, $font, $color) {
+    padding-bottom: $pad;
+    font-size: $font;
+    color: $color;
+}
+
+@mixin hazdetucuerpo($align, $font, $color) {
+    text-align: $align;
+    font-size: $font;
+    color: $color;
+}

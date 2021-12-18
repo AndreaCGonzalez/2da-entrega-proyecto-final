@@ -1,3 +1,8 @@
+//aplicar 1 mixin y 1 extend.
+//achicar letras en responsive
+//seccion solicitar imagen de pesas de fondo, sacar delineado del input con pseudoclase
+@import 'variables';
+
 *{
     margin:0;
     padding:0;
@@ -5,8 +10,8 @@
 }
 
 .bodyRexxTR{
-    color:#E8F6D0;
-    background-color: #111010;
+    color: $lettering;
+    background-color: $colorFondo;
     
     h1, h2, h3{
         font-family: 'Righteous', cursive;
@@ -14,18 +19,18 @@
     
     p {
         font-family: 'Tinos', serif;
-        line-height: 1.6rem;
+        line-height: 1.5rem;
     }
     
     a {
         font-family: 'Tinos', serif;
-        color: #E8F6D0;
+        color:  $letraZpezial;
         text-decoration: none;
     }
 }
 
-/*INDEX
-PORTADA*/
+/*INDEX*/
+
 .portada img{
     width: 100%;
 }
@@ -38,18 +43,25 @@ PORTADA*/
 
 @import 'contacto';
 
-@import 'sobremi';
-
-@import 'solicitar';
-
 
 /* FOOTER */
 
 .footer p{
     font-family: 'Tinos', serif;
-    font-size: 1rem;
+    font-size: $size16;
     text-align: center;
+    //background-color: $colorDetashes;
+    color: $letraZpezial;
 }
+
+/*PAGINAS*/
+
+@import 'sobremi';
+
+@import 'solicitar';
+
+
+/*MEDIA QUERIES*/
 
 @import 'responsiveTablet';
 

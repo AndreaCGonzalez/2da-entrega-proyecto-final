@@ -1,3 +1,17 @@
+/*MIXINS*/
+@mixin quiensoy($pad, $font, $color) {
+    padding-bottom: $pad;
+    font-size: $font;
+    color: $color;
+}
+
+@mixin hazdetucuerpo($align, $font, $color) {
+    text-align: $align;
+    font-size: $font;
+    color: $color;
+}
+
+
 /* SOBRE MI */
 .contenedor{
 
@@ -15,41 +29,36 @@
          .quiensoy{
             width: 55vw;
             padding: 2%;
-            border: solid 2px #00C85F;
+            border: solid 2px $colorDetashes;
             border-radius: 20px;
     
-            .biografiaTitulo{
-                padding-bottom: 2%;
-                font-size: 1.23rem;
+            .biografiaTituloUp{
+               @include quiensoy(2%, $size18, $letraZpezial);
             }
             
             .biografiaDescripcion{
                 text-align: justify;
-                font-size: 1.2rem;
+                font-size: $size18;
+                color: $letraZpezial;
             }
         }
     
         .hazdetucuerpo{
-            width: 55vw;
-            padding: 2%;
-            border: solid 2px #00C85F;
-            border-radius: 20px;
-    
+             @extend .quiensoy;
+
             .biografiaTitulo{
                 padding-bottom: 2%;
-                font-size: 1.23rem;
+                font-size: $size18;
+                color: $letraZpezial;
             }
             
             .biografiaDescripcion{
-                text-align: justify;
-                font-size: 1.2rem;
+                @include hazdetucuerpo(justify, $size18, $letraZpezial);
             }
-        }
+        }              
     }
 }
 
-.footer{
-    background-color: #111010;
-}
+
 
 
