@@ -4,12 +4,12 @@
     @include flex(flex, column, center, space-evenly);
 
     .pDETitulo{
-        @include bio(center, $size30, $letraZpezial);
+        @include bio(center, $size26, $letraZpezial);
         margin-top: 5%;
     }
 
     .pDESubtitulo{
-        @include bio(center, $size28, $letraZpezial);
+        @include bio(center, $size24, $letraZpezial);
     }
 
     .planesDetalles{
@@ -20,18 +20,18 @@
         border-radius: 15px;
 
         .nombrePlan{
-            @include bio(center, $size26, $letraZpezial);
+            @include bio(center, $size22, $letraZpezial);
             margin: 3% 0;
         }
 
         .descripcionPlan{
-            @include bio(center, $size24, $letraZpezial);
+            @include bio(center, $size22, $letraZpezial);
             margin-bottom: 3%;
         }
 
         .queIncluye{
             list-style-type: none;
-            @include bio(center, $size24, $letraZpezial);
+            @include bio(center, $size20, $letraZpezial);
         }
     }
 }

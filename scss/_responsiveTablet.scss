@@ -219,26 +219,27 @@
 
     .PlanesDeEntrenamiento{
         .pDETitulo{
-            font-size: $size26;
+            font-size: $size24;
         }
 
         .pDESubtitulo{
-            font-size: $size26;
+            font-size: $size24;
         }
 
         .planesDetalles{    
             .nombrePlan{
-                font-size: $size24;
+                font-size: $size22;
                 margin: 5% 0;
             }
     
             .descripcionPlan{
-                font-size: $size22;
+                font-size: $size20;
                 margin-bottom: 5%;
+                padding: 2%;
             }
     
             .queIncluye{
-                font-size: $size22;
+                font-size: $size20;
             }
         }
     }
