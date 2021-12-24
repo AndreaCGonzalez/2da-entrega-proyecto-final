@@ -3,51 +3,40 @@
 
     .productos{        
 
-        h1{
-            font-size: $size22;
-        }
-
-        h2{            
-            font-size: $size22;
+        .prodTitulo{
+            font-size: $size26;
         }
 
         .planesContainer{
             width: 100vw;
 
             .planes{
-                width: 25vw;
-
-                .planes{
-                    width: 30vw;
-                }
-            
-                .planTitulo{
-                    padding-bottom: 6%;
-                    font-size: $size18;
-                }    
-                
-                .planDescripcion .queIncluye{
-                    font-size: $size18;
-                }
+                width: 23vw;
             }             
         } 
     }
-    
-    /* SECCION 3 REXXTV */
-    .rexxtv{       
 
-        .rexxtvContainerLeft{            
+    /* SECCION 4 FOOTER */
+    .footer{
+        .contenedorContacto{
+            .infocliente{
+                .form{
+                    input{
+                        width: 18vw;
+                    }
+                }
 
-            .rexxtvTitulo{
-                padding-top: 5%;               
-                width: 18vw;
+                .btn{
+                    @include btn(none,8px, 1%, center, 12vw);
 
-                h2{
-                    font-size: $size26;
-                }               
+                    &:hover{           
+                        box-shadow: inset 12vw 0 0 0 $letraZpezial;
+                    }
+                }
             }
-        }
+        } 
     }
+    
 
     /* SOBRE MI */
 
@@ -59,8 +48,7 @@
                 width: 30vw;
             }
         }
-    }
-    
+    }   
 }
 
 
@@ -69,32 +57,18 @@
 
     /* SECCION 2 PRODUCTOS */
     .productos{
-        padding-bottom: 2%;
+        //padding-bottom: 2%;
 
-        h1{
-            font-size: 1.4rem;
-        }
+        .prodTitulo{
+            font-size: $size28;
 
-        h2{
-            padding-bottom: 2.5%;
-            font-size: $size22;
         }
 
         .planesContainer{
             width: 100vw;
 
             .planes{
-                width: 30vw;
-            }
-        
-            .planTitulo{
-                padding-bottom: 10%;
-                font-size: $size22;
-            }
-
-            
-            .planDescripcion .queIncluye{
-                font-size: $size18;
+                width: 25vw;
             }
         }
     }
@@ -102,37 +76,15 @@
         
     /* SECCION 3 REXXTV */
     .rexxtv{
-        flex-direction: column;
-        align-content: center;
-        margin-bottom: 4%;
-
-        .rexxtvContainerLeft{
-            width: 50vw;
-            padding: 3% 0 3% 5%;
-
-            .rexxtvTitulo{
-                padding-top: 5%;               
-                width: 20vw;
-
-                h2{
-                    font-size: $size28;
-                }               
-            }
+        margin: 12% 0;
+        .rexxtvImagen{
+            width: 75%;
         }
     }
 
     
     /* SECCION 4 CONTACTO */
-    .contacto{
-        margin-top: 0;
-        padding: 2%;        
 
-        .contactoRight{
-            h2{
-                padding-bottom: 4%;
-            }
-        } 
-    }
     
 
     /* SOBRE MI */
@@ -146,108 +98,56 @@
              }
         
              .quiensoy{
-                width: 43vw;                
-
-                .biografiaTituloUp{
-                    padding-bottom: 2%;
-                    font-size: $size18;
-                }
+                width: 43vw;
                 
                 .biografiaDescripcionUp{                   
-                    font-size: $size22;
+                    line-height: 1.5rem;
                 }
             }
         
             .hazdetucuerpo{
-                width: 43vw;               
-        
-                .biografiaTitulo{                   
-                    font-size: $size18;
-                }
+                width: 43vw;
                 
-                .biografiaDescripcion{                    
-                    font-size: $size22;
+                .biografiaDescripcion{
+                    line-height: 1.5rem;
                 }
             }
         }
     }
     
-
-    /* SOLICITAR */
-
-    .contactame{
-        margin-bottom: 15%;
-        margin-top: 10%;
-       
-        .contactameForm{
-            width: 60vw;
-            padding: 3% 5%;
-
-            h1{
-                padding: 4% 0 4% 0;
-                font-size: $size22;
-                text-align: center;
-            }
-    
-            .infocliente{
-                width: 45vw;
-            }
-        
-            .form{
-                padding: 4%;
-                padding-left: 17%;
-            }
-            
-            .form input{
-                width: 30vw;                
-            }
-
-            .form textarea{
-                width: 30vw;
-                padding: 2%;                
-
-            }
-            
-            .botones input[type="submit"] {
-                width: 12vw;
-            }
-        } 
-    }
-}
     
 
 
 
 @media screen and (max-width: 768px) {
     
+    /* HEADER */
+    .navbar{       
+    
+        .container{
+            .navbar-collapse{
+                .nav-link{
+                    font-size: $size18;    
+                }
+            }
+        }
+    }
+    
     /* SECCION 1 PRODUCTOS */
     .productos{    
 
-        h1, h2{
-            font-size: $size18;
+        .prodTitulo{
+            font-size: $size24; 
         }
 
-        .planesContainer{
-            
+        .planesContainer{            
             flex-direction: column;
             align-items: center;
+            padding-top: 5%;
         
             .planes{
-                margin-bottom: 5%;
-                width: 38vw;
-
-                .planTitulo{                        
-                    font-size:$size20;
-                }
-                    
-                .planDescripcion {
-                    font-size: $size18;
-                    line-height: 1.4rem;
-                }
-
-                .queIncluye{
-                    font-size: $size16;
-                }
+                margin-bottom: 8%;
+                width: 31vw;
             }
         }
     }
@@ -256,31 +156,32 @@
     
     /* SECCION REXXTV */
     .rexxtv{
-        flex-direction: column;
-        align-content: center;
-        margin-bottom: 4%;
-
-        .rexxtvContainerLeft{
-            width: 50vw;
-            padding: 0 0 5% 3%;
-
-            .rexxtvTitulo{
-                padding-top: 5%;               
-                width: 25vw;
-
-                h2{
-                    font-size: $size28;
-                }
-            }
-        }             
+        .rexxtvImagen{
+            width: 85%;
+        }   
     }
     
 
-    /* SECCION 4 CONTACTO */
-    .contactoLista h2{
-        font-size: $size16;
-        text-align: center;
-    }
+    /* SECCION 4 FOOTER */
+    .footer{
+        .contenedorContacto{
+            .infocliente{
+                .form{
+                    input{
+                        width: 25vw;
+                    }
+                }
+
+                .btn{
+                    @include btn(none,8px, 1%, center, 16vw);
+
+                    &:hover{           
+                        box-shadow: inset 16vw 0 0 0 $letraZpezial;
+                    }
+                }
+            }
+        }
+    } 
 
 
 
@@ -290,7 +191,7 @@
             padding-bottom: 8%;
             padding-top: 5%;
 
-            img{
+            .biografiaImagen{
                 width: 40vw;
             }
 
@@ -298,12 +199,7 @@
                 width: 50vw;
                 border: none;
 
-                .biografiaTituloUp{
-                    font-size: $size16;
-                }
-
                 .biografiaDescripcionUp{
-                    font-size: $size18;
                     line-height: 1.6rem;
                 }
             }
@@ -312,35 +208,38 @@
                 width: 50vw;
                 border: none;
 
-                .biografiaTitulo{
-                    font-size: $size16;
-                }
-
                 .biografiaDescripcion{
-                    font-size: $size18;
                     line-height: 1.6rem;
                 }
             }
         }
     }
-    
 
+    /* PLANES DE ENTRENAMIENTO */
 
-    /* SOLICITAR */
-    
-    .contactame{
-        padding: 8% 0;
-        margin-bottom: 8%;
+    .PlanesDeEntrenamiento{
+        .pDETitulo{
+            font-size: $size26;
+        }
 
-        .contactameForm{
+        .pDESubtitulo{
+            font-size: $size26;
+        }
 
-            .form{
-                padding-left: 11%;
+        .planesDetalles{    
+            .nombrePlan{
+                font-size: $size24;
+                margin: 5% 0;
             }
-
-            .form input, .form textarea{            
-                width: 35vw;
+    
+            .descripcionPlan{
+                font-size: $size22;
+                margin-bottom: 5%;
+            }
+    
+            .queIncluye{
+                font-size: $size22;
             }
         }
     }
-}
+}}

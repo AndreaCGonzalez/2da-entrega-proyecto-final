@@ -6,9 +6,7 @@
         .container{
             .navbar-collapse{
                 .nav-link{
-                    color: $letraZpezial;
                     font-size: $size16;
-    
                 }
             }
         }
@@ -16,7 +14,7 @@
     
     .navbar-brand{
         img{
-            height: 12vh;
+            height: 10vh;
         }
     }
 
@@ -25,38 +23,24 @@
     /* SECCION 1 PRODUCTOS */
     .productos{    
 
-        h1, h2{
-            font-size: $size18;
+        .prodTitulo{
+            font-size: $size20;
         }
 
         .planesContainer{
-
+            padding-top: 10%;
+            
             .planes{
-                padding: 4%;
-                margin-bottom: 5%;
-                width: 60vw;
+                width: 50vw;
                 border-radius: 12px;
+                margin-bottom: 12%;
 
-                .planTitulo{
-                    font-size: $size16;
-                    padding-bottom: 4%;                    
-                }
-
-                p{
-                    font-size: $size16;
-                    line-height: 1.3rem;
-                    margin:0;               
-                }
-
-                .queIncluye{                                   
-                    padding-bottom: 7%;
-                    font-size: $size16;
-                    margin:0; 
-                }
-
-                .botonSolicitar{
-                    width: 40vw;
-                    margin-left: 10%;
+                .btn{
+                    @include btn(none,8px, 2%, center, 30vw);
+    
+                    &:hover{           
+                        box-shadow: inset 30vw 0 0 0 $colorAlt;
+                    }
                 }
             }
         }
@@ -65,70 +49,75 @@
 
     
     /* SECCION REXXTV */
-    .rexxtv{
+    .rexxtv{   
 
-        .rexxtvContainerLeft{          
+        .rexxtvImagen{
+            display: none;
+        }
+        
+        .rexxtvImgMobile{
+            display:initial;
+            width: 90%;
+        }
+    }
+    
 
-            .rexxtvTitulo{              
-                width: 35vw;
+    /* SECCION 4 FOOTER */
+    
+    .footer{
+        .contenedorContacto{
+            @include flex(flex, column, center, space-evenly);
 
-                h2{
-                    font-size: $size22;
-                    padding:0;
+            .contactame{
+                @include flex(flex, column, flex-start, space-between);
+                padding-top: 5%;
+                padding-bottom: 8%;
+
+               h2{
+                   font-size: $size18;
+                }
+       
+                .contactoIcono{
+                   height: 4vw;
                 }
             }
 
-            .rexxtvTexto{
-                font-size: $size18;
-                line-height: 1.5rem;
+            .infocliente{
+                padding-bottom: 12%;
+
+                .form{
+                    input{
+                        width: 40vw;
+                    }
+                }
+
+                .btn{
+                    @include btn(none,8px, 1%, center, 28vw);
+
+                    &:hover{           
+                        box-shadow: inset 28vw 0 0 0 $letraZpezial;
+                    }
+                }
             }
-        }
 
-        .rexxtvImagen{
-            width: 80vw;
-        }              
-    }
-    
+            .contactoRedes{
+                width: 25vw;
+                padding-bottom: 8%;
 
-    /* SECCION 4 CONTACTO */
-    
-    .contacto{
-        padding: 2%;
-        margin-top: 5%;
-        display: flex;
-        justify-content: space-around;
-        align-content: center;
-        background-color:$colorDetashes;
+                .contactoIcono{
+                    height: 6vw;
+                }
        
-    
-        .contactoright{
-            font-size: $size14;
-
-            h2{
-                font-size: $size14;
-            }
-    
-            .contactoIcono{
-               height: 3vw;
-               padding-right: 4%;
+                .tiktok{
+                    height: 6.5vw;
+               }
             }
         }
 
-        .contactoleft{           
-            width: 18vw;
-    
-            .contactoIcono{
-                height: 5vw;
-            }
-        }
-    }
-
-    .footer{
-        p{
+        .leyenda{
             font-size: $size14;
         }
-    }
-        
+    }  
 
 
     /* SOBRE MI */
@@ -140,88 +129,75 @@
             padding-top: 5%;
 
             .biografiaImagen{
-                width: 60vw;
+                width: 80vw;
                 padding-bottom: 5%;
             }
 
             .quiensoy{
-                width: 100vw;               
+                width: 90vw;               
 
                 .biografiaTituloUp{
-                    font-size: $size16;
+                    @include bio(center, $size16, $letraZpezial);
                 }
 
                 .biografiaDescripcionUp{
                     @extend .biografiaTituloUp;
-                    line-height: 1.35rem;
+                    line-height: 1.4rem;
                 }
             }
         
             .hazdetucuerpo{
-                width: 100vw;                
+                width: 90vw;
+                margin-bottom: 5%;              
 
                 .biografiaTitulo{
-                    font-size: $size16;
+                    @include bio(center, $size16, $letraZpezial);
                 }
 
                 .biografiaDescripcion{
                     @extend .biografiaTituloUp;
-                    line-height: 1.35rem;
+                    line-height: 1.4rem;
                 }                
             }
+        }
+    }
 
-            .biografiaImagen{
-                width: 60vw;
-                padding-top: 5%;
+
+    /*PLANES DE ENTRENAMIENTO*/
+
+    .PlanesDeEntrenamiento{
+
+        .pDETitulo{
+            @include bio(center, $size24, $letraZpezial);
+            margin-top: 8%;
+        }
+
+        .pDESubtitulo{
+            @include bio(center, $size22, $letraZpezial);
+        }
+
+        .planesDetalles{
+            width: 85vw;
+            padding:2%;
+            margin-top: 10%;
+
+            .nombrePlan{
+                @include bio(center, $size20, $letraZpezial);
+                margin: 5% 0;
+            }
+
+            .descripcionPlan{
+                @include bio(center, $size20, $letraZpezial);
+                margin-bottom: 5%;
+            }
+
+            .queIncluye{
+                @include bio(center, $size20, $letraZpezial);
+                padding-left: 0;
             }
         }
     }
-    
-
-/* SOLICITAR */
-    .contactame{
-        padding: 8% 0;
-        margin-bottom: 8%;
-
-        .contactameForm{
-            width: 75vw;
-
-            h1{               
-                font-size: $size18;                
-            }
-    
-            p{                
-                font-size: $size18;
-                line-height: 1.35rem;
-            }
-
-            .infocliente{
-                width: 55vw;                
-            }
-
-            .form{                
-                padding-left: 15%;
-            }
-            
-            .form input{
-                width: 40vw; 
-                height: 7vh;
-                padding-left: 4%;         
-            }
-
-            .form textarea{
-                width: 40vw;
-                height: 25vh;
-                padding: 4%;  
-            }
-            
-            .botones input[type="submit"] {
-                width: 18vw;
-                height: 8vh;
-            }
-        }
-    }
-}
+}  
 
 
 
@@ -230,150 +206,90 @@
 
     .navbar-brand{
         img{
-            height: 10vh;
+            height: 8vh;
         }
     }
 
      /* SECCION 1 PRODUCTOS */
      .productos{    
 
-        h1{
+        .prodTitulo{
             font-size: $size16;
         }
 
-        h2{
-            font-size: $size14;
-            padding-bottom: 8%;
-        }
-
         .planesContainer{
+            padding-top: 10%;
 
             .planes{
-                border-radius: 12px;
-                padding: 4%;
-                margin-bottom: 10%;
-                width: 85vw;
+                margin-bottom: 13%;
+                width: 75vw;
 
-                .planTitulo{
-                    font-size: $size16;
-                    padding-top: 2%;
-                }
-
-                .planDescripcion{
-                    line-height: 1.3rem;
-                    font-size: $size12;
-                }
-
-                .queIncluye{
-                    font-size: $size12;
-                }
-                
-                .botonSolicitar{
-                    width: 50vw;
-                    margin-left: 10%;
+                .btn{
+                    @include btn(none,8px, 2%, center, 40vw);
+    
+                    &:hover{           
+                        box-shadow: inset 40vw 0 0 0 $colorAlt;
+                    }
                 }
             }
         }
     }
    
 
+
+    /* SECCION 4 FOOTER */
     
-    /* SECCION REXXTV */
-    .rexxtv{
+    .footer{
+        .contenedorContacto{
 
-        .rexxtvContainerLeft{
-            width: 65vw;
-            margin-top: 4%;
+            .contactame{
+                padding-top: 8%;
+                padding-bottom: 10%;
+       
+                .contactoIcono{
+                   height: 6vw;
+                }
+            }
 
-            .rexxtvTitulo{              
-                width: 45vw;
+            .infocliente{
+                padding-bottom: 15%;
 
                 h2{
-                    font-size: $size16;
-                    padding: 0;
+                    @include textocard($size18, center, 1%);
+                    margin: 0;
                 }
 
-                .botonEnvivo{
-                    @keyframes pulse {
-                        0% {
-                            transform: scale(1);
-                        }
-                        50%{
-                            transform: scale(1.1);
-                        }
-                        
-                        75%{
-                            transform: scale(1.2);
-                        }
-                        100%{
-                            transform: scale(1);
-                        }
+                .form{
+                    input{
+                        width: 50vw;
+                    }
+                }
+
+                .btn{
+                    @include btn(none,8px, 1%, center, 35vw);
+
+                    &:hover{           
+                        box-shadow: inset 35vw 0 0 0 $letraZpezial;
                     }
                 }
             }
 
-            .rexxtvTexto{
-                font-size: $size16;
-                line-height: 1.35rem;
-            }
-        }                      
-    }
-    
+            .contactoRedes{
+                width: 40vw;
+                padding-bottom: 10%;
 
-    /* SECCION 4 CONTACTO */
-    
-    .contacto{
-        padding: 2%;
-        margin-top: 8%;
-        display: flex;
-        align-items: center;
-        flex-direction: column;
+                .contactoIcono{
+                    height: 10vw;
+                }
        
-        .contactoright{
-            font-size: $size14;
-
-            h2{
-                font-size: $size14;
-                padding-top: 5%;
-                padding-bottom: 4%;
-                margin:0;
-            }
-
-            .mail{
-                padding-top: 0;
-                padding: bottom 5%;
-
-                .contactoIcono{
-                    height: 5vw;
-                    padding-right: 5%;                   
-                 }
-            }
-
-            .wapp{
-                padding-top: 0;
-                padding: bottom 5%;
-
-                .contactoIcono{
-                    height: 5vw;
-                    padding-right: 5%;                   
-                 }
+                .tiktok{
+                    height: 10.5vw;
+               }
             }
         }
-        
-        .contactoleft{           
-            width: 50vw;
-            padding: 6% 15% 8% 0;
-            justify-content: space-evenly;
-    
-            .contactoIcono{
-                height: 7vw;
-            }
-        }
-    }
 
-    .footer{
-        p{
-            font-size: $size10;
+        .leyenda{
+            font-size: $size12;
         }
     }
 
@@ -385,15 +301,12 @@
             padding-bottom: 8%;
             padding-top: 5%;
 
-            .biografiaImagen{
-                width: 75vw;
-            }
-
             .quiensoy{
                 width: 90vw;
+                background-color:$colorFondo;
 
                 .biografiaTituloUp{
-                    font-size: $size16;
+                    @include bio(center, $size16, $letraZpezial);
                 }
 
                 .biografiaDescripcionUp{
@@ -403,10 +316,11 @@
             }
         
             .hazdetucuerpo{
-                width: 90vw;                
+                width: 90vw;
+                background-color:$colorFondo;           
 
                 .biografiaTitulo{
-                    font-size: $size16;
+                    @include bio(center, $size16, $letraZpezial);
                 }
 
                 .biografiaDescripcion{
@@ -418,49 +332,34 @@
     }
 
 
+    /*PLANES DE ENTRENAMIENTO*/
 
-    /* SOLICITAR */
+    .PlanesDeEntrenamiento{
 
-    .contactame{
-    
-        .contactameForm{
-            width: 80vw;
-    
-            h1{
-                padding-bottom: 6%;
-                font-size: $size16;               
+        .pDETitulo{
+            @include bio(center, $size20, $letraZpezial);
+            margin-top: 12%;
+        }
+
+        .pDESubtitulo{
+            @include bio(center, $size18, $letraZpezial);
+        }
+
+        .planesDetalles{
+            margin-top: 12%;
+
+            .nombrePlan{
+                @include bio(center, $size18, $letraZpezial);
+                margin: 7% 0;
             }
-    
-            p{
-                padding-bottom: 8%;
-                font-size: $size16;
+
+            .descripcionPlan{
+                @include bio(center, $size16, $letraZpezial);
+                margin-bottom: 7%;
             }
-    
-            .infocliente{
-                width: 50vw;
-                padding-bottom: 3%;
-                padding-right: 11%;
-            }
-            
-            .form{               
-                padding: 2%;
-                padding-bottom: 5%;
-                padding-right: 5%;           
-            }
-            
-            .form input, .form textarea{
-                padding-left: 4%;
-                width: 53vw;
-                height: 4.5vh;
-            }
-            
-            .form textarea{
-                height: 15vh;
-            }
-    
-            .botones input[type="submit"] {           
-                width: 32vw;
-                height: 6vh;
+
+            .queIncluye{
+                @include bio(center, $size16, $letraZpezial);
             }
         }
     }

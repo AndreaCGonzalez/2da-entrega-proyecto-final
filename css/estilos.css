@@ -4,177 +4,166 @@
   box-sizing: border-box; }
 
 .bodyRexxTR {
-  color: #003E00;
+  color: #2f3658;
   background-color: #111010; }
   .bodyRexxTR h1, .bodyRexxTR h2, .bodyRexxTR h3 {
     font-family: 'Righteous', cursive; }
   .bodyRexxTR p {
     font-family: 'Tinos', serif;
-    line-height: 1.5rem; }
+    line-height: 1.4rem; }
   .bodyRexxTR a {
     font-family: 'Tinos', serif;
-    color: #E8F6D0;
+    color: #D6FADB;
     text-decoration: none; }
 
 /*INDEX*/
 .portada img {
-  width: 100%; }
+  width: 100%;
+  margin-bottom: 10%; }
 
 /*MENU*/
 .navbar {
   background-color: #00C85F; }
   .navbar .container .navbar-collapse .nav-link {
-    color: #003E00;
-    font-size: 1.3rem; }
+    color: #D6FADB;
+    font-size: 1.125rem; }
 
 /*PRODUCTOS*/
 .productos {
   margin-top: 2%;
   width: 100%; }
-  .productos h1 {
-    padding: 0.2% 0 1.3% 0;
+  .productos .prodTitulo {
     text-align: center;
-    font-size: 1.625rem;
-    color: #E8F6D0; }
-  .productos h2 {
-    font-size: 1.375rem;
-    text-align: center;
-    color: #E8F6D0; }
+    font-size: 1.875rem;
+    color: #D6FADB; }
   .productos .planesContainer {
     padding-top: 3%;
     display: flex;
     justify-content: space-evenly; }
     .productos .planesContainer .planes {
-      width: 25vw;
-      padding: 2%;
-      border-radius: 25px;
-      background: -webkit-linear-gradient(to bottom, #89df09, #00C85F);
-      /* Chrome 10-25, Safari 5.1-6 */
-      background: linear-gradient(to bottom, #89df09, #00C85F);
-      /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      background: #ffffffbb;
+      width: 20vw;
+      border-radius: 15px;
+      text-align: center;
+      overflow: hidden;
       display: flex;
       flex-direction: column;
-      justify-content: space-evenly; }
+      align-items: center;
+      justify-content: space-between; }
+      .productos .planesContainer .planes img {
+        width: 100%;
+        height: 25vh;
+        margin-bottom: 5%; }
       .productos .planesContainer .planes .planTitulo {
-        font-size: 1.25rem;
-        text-align: center;
-        padding-bottom: 5%; }
+        font-size: 1.125rem; }
       .productos .planesContainer .planes .planDescripcion {
-        padding: 5% 0;
-        font-size: 1rem; }
-      .productos .planesContainer .planes .queIncluye {
-        list-style-type: none;
-        font-family: 'Tinos', serif;
-        font-size: 1rem;
-        padding: 4% 0; }
-      .productos .planesContainer .planes .botonSolicitar {
-        border: 2px solid #E8F6D0;
+        font-size: 1.125rem; }
+      .productos .planesContainer .planes .btn {
+        border: none;
         border-radius: 8px;
         padding: 2%;
-        text-align: center; }
-        .productos .planesContainer .planes .botonSolicitar:hover {
-          transform: scale(1.1);
-          color: #003E00;
-          border: 2px solid #003E00; }
+        text-align: center;
+        width: 15vw;
+        box-shadow: inset 0 0 0 0 #3B4472;
+        transition: ease-in-out 0.3s;
+        background-color: #00C85F;
+        color: #003E00;
+        margin: 2% 0; }
+        .productos .planesContainer .planes .btn:hover {
+          box-shadow: inset 15vw 0 0 0 #3B4472;
+          color: #D6FADB; }
 
 /*RexxTV*/
 .rexxtv {
-  background-color: #111010;
-  border: 3px solid #00C85F;
-  border-radius: 30px;
-  margin-top: 5%;
+  margin-top: 15%;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
-  align-content: center; }
-  .rexxtv .rexxtvContainerLeft {
-    width: 20vw;
-    display: flex;
-    flex-direction: column;
-    align-self: center; }
-    .rexxtv .rexxtvContainerLeft .rexxtvTitulo {
-      padding: 10% 2% 8% 0;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      width: 15vw;
-      color: #E8F6D0; }
-      .rexxtv .rexxtvContainerLeft .rexxtvTitulo h2 {
-        font-size: 1.875rem; }
-      .rexxtv .rexxtvContainerLeft .rexxtvTitulo .botonEnvivo {
-        color: #003E00;
-        border: 2px solid #89df09;
-        border-radius: 6px;
-        background-color: #89df09;
-        animation-name: pulse;
-        animation-iteration-count: infinite;
-        animation-timing-function: ease-in;
-        animation-duration: 2s; }
-
-@keyframes pulse {
-  0% {
-    transform: scale(1); }
-  25% {
-    transform: scale(1.2); }
-  50% {
-    transform: scale(1.3); }
-  75% {
-    transform: scale(1.2); }
-  100% {
-    transform: scale(1); } }
-    .rexxtv .rexxtvContainerLeft .rexxtvTexto {
-      font-size: 1.375rem;
-      line-height: 2rem;
-      color: #E8F6D0; }
+  align-content: center;
+  justify-content: center; }
   .rexxtv .rexxtvImagen {
-    padding: 4% 0 5% 0; }
+    width: 70%; }
+  .rexxtv .rexxtvImgMobile {
+    display: none; }
 
 /*CONTACTO*/
-.contacto {
-  padding: 2%;
-  margin-top: 5%;
-  display: flex;
-  justify-content: space-around;
-  align-content: center;
+.footer {
+  margin-top: 12%;
   background-color: #00C85F; }
-  .contacto .contactoright {
+  .footer .contenedorContacto {
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: space-between;
-    color: #003E00; }
-    .contacto .contactoright h2 {
-      color: #003E00;
-      font-size: 1.25rem; }
-    .contacto .contactoright .mail, .contacto .contactoright .wapp {
-      display: flex;
-      align-items: center;
-      padding-top: 7%; }
-      .contacto .contactoright .mail .contactoRInfo, .contacto .contactoright .wapp .contactoRInfo {
-        margin: 0; }
-    .contacto .contactoright .contactoIcono {
-      height: 2vw;
-      padding-right: 4%; }
-  .contacto .contactoleft {
-    display: flex;
+    flex-direction: row;
     align-items: center;
-    align-content: center;
-    justify-content: space-between;
-    width: 12vw; }
-    .contacto .contactoleft .contactoIcono {
-      height: 3.5vw; }
-    .contacto .contactoleft .tiktok {
-      height: 4vw; }
-
-/* FOOTER */
-.footer p {
-  font-family: 'Tinos', serif;
-  font-size: 1rem;
-  text-align: center;
-  color: #E8F6D0; }
+    justify-content: space-evenly; }
+    .footer .contenedorContacto .contactame {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: space-between; }
+      .footer .contenedorContacto .contactame h2 {
+        font-size: 1.25rem; }
+      .footer .contenedorContacto .contactame .mail, .footer .contenedorContacto .contactame .wapp {
+        display: flex;
+        align-items: center;
+        padding-top: 7%; }
+        .footer .contenedorContacto .contactame .mail .contactoRInfo, .footer .contenedorContacto .contactame .wapp .contactoRInfo {
+          margin: 0;
+          color: #3B4472; }
+      .footer .contenedorContacto .contactame .contactoIcono {
+        height: 2vw;
+        padding-right: 4%; }
+    .footer .contenedorContacto .infocliente {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly;
+      padding: 2% 0; }
+      .footer .contenedorContacto .infocliente h2 {
+        font-size: 1.25rem;
+        text-align: center;
+        padding: 1%;
+        margin: 0; }
+      .footer .contenedorContacto .infocliente h3 {
+        font-size: 1rem;
+        text-align: center;
+        padding: 1%; }
+      .footer .contenedorContacto .infocliente .form {
+        padding-bottom: 3%; }
+        .footer .contenedorContacto .infocliente .form input {
+          width: 15vw;
+          height: 4vh;
+          padding-left: 4%;
+          font-size: 0.75rem;
+          border-radius: 7px;
+          border: none; }
+      .footer .contenedorContacto .infocliente .btn {
+        border: none;
+        border-radius: 8px;
+        padding: 1%;
+        text-align: center;
+        width: 10vw;
+        box-shadow: inset 0 0 0 0 #D6FADB;
+        transition: ease-in-out 0.3s;
+        background-color: #3B4472;
+        color: #D6FADB;
+        margin: 2% 0; }
+        .footer .contenedorContacto .infocliente .btn:hover {
+          box-shadow: inset 10vw 0 0 0 #D6FADB;
+          color: #2f3658; }
+    .footer .contenedorContacto .contactoRedes {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      align-content: center;
+      width: 15vw; }
+      .footer .contenedorContacto .contactoRedes .contactoIcono {
+        height: 3.5vw; }
+      .footer .contenedorContacto .contactoRedes .tiktok {
+        height: 4vw; }
+  .footer .leyenda {
+    color: black;
+    text-align: center; }
 
 /*PAGINAS*/
-/*MIXINS*/
 /* SOBRE MI */
 .contenedor .contenedorBiografia {
   display: flex;
@@ -187,97 +176,90 @@
   .contenedor .contenedorBiografia .quiensoy, .contenedor .contenedorBiografia .hazdetucuerpo {
     width: 55vw;
     padding: 2%;
-    border: solid 2px #00C85F;
-    border-radius: 20px; }
+    background-color: #3B4472;
+    border-radius: 10px; }
     .contenedor .contenedorBiografia .quiensoy .biografiaTituloUp, .contenedor .contenedorBiografia .hazdetucuerpo .biografiaTituloUp, .contenedor .contenedorBiografia .quiensoy .biografiaDescripcionUp, .contenedor .contenedorBiografia .hazdetucuerpo .biografiaDescripcionUp, .contenedor .contenedorBiografia .hazdetucuerpo .biografiaDescripcion {
-      padding-bottom: 2%;
-      font-size: 1.125rem;
-      color: #E8F6D0; }
-    .contenedor .contenedorBiografia .quiensoy .biografiaDescripcion, .contenedor .contenedorBiografia .hazdetucuerpo .biografiaDescripcion {
       text-align: justify;
       font-size: 1.125rem;
-      color: #E8F6D0; }
+      color: #D6FADB;
+      padding-top: 2%; }
+    .contenedor .contenedorBiografia .quiensoy .biografiaDescripcionUp, .contenedor .contenedorBiografia .hazdetucuerpo .biografiaDescripcionUp {
+      text-align: justify;
+      font-size: 1.125rem;
+      color: #D6FADB; }
   .contenedor .contenedorBiografia .hazdetucuerpo .biografiaTitulo {
-    padding-bottom: 2%;
+    text-align: justify;
     font-size: 1.125rem;
-    color: #E8F6D0; }
+    color: #D6FADB;
+    padding-top: 2%; }
   .contenedor .contenedorBiografia .hazdetucuerpo .biografiaDescripcion {
     text-align: justify;
     font-size: 1.125rem;
-    color: #E8F6D0; }
+    color: #D6FADB; }
 
-/*CONTACTO*/
-.contactame {
-  margin: 6% 0;
+/*PLANES*/
+.PlanesDeEntrenamiento {
   display: flex;
-  justify-content: center; }
-  .contactame .contactameForm {
-    width: 40vw;
-    border: 3px solid #00C85F;
-    border-radius: 30px;
-    display: flex;
-    flex-direction: column;
-    align-items: center; }
-    .contactame .contactameForm h1 {
-      padding: 4% 0 2% 0;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly; }
+  .PlanesDeEntrenamiento .pDETitulo {
+    text-align: center;
+    font-size: 1.875rem;
+    color: #D6FADB;
+    margin-top: 5%; }
+  .PlanesDeEntrenamiento .pDESubtitulo {
+    text-align: center;
+    font-size: 1.75rem;
+    color: #D6FADB; }
+  .PlanesDeEntrenamiento .planesDetalles {
+    width: 80vw;
+    background-color: #3B4472;
+    margin-top: 5%;
+    margin-bottom: 10%;
+    border-radius: 15px; }
+    .PlanesDeEntrenamiento .planesDetalles .nombrePlan {
+      text-align: center;
+      font-size: 1.625rem;
+      color: #D6FADB;
+      margin: 3% 0; }
+    .PlanesDeEntrenamiento .planesDetalles .descripcionPlan {
+      text-align: center;
       font-size: 1.5rem;
+      color: #D6FADB;
+      margin-bottom: 3%; }
+    .PlanesDeEntrenamiento .planesDetalles .queIncluye {
+      list-style-type: none;
       text-align: center;
-      color: #E8F6D0; }
-    .contactame .contactameForm p {
-      padding: 0 2% 6% 2%;
-      text-align: center;
-      font-size: 1.125rem;
-      color: #E8F6D0; }
-    .contactame .contactameForm .infocliente {
-      width: 20vw;
-      padding-bottom: 3%; }
-    .contactame .contactameForm .form {
-      padding: 4%; }
-      .contactame .contactameForm .form input, .contactame .contactameForm .form textarea {
-        padding-left: 2%;
-        border: none;
-        border-radius: 7px;
-        height: 4vh;
-        width: 20vw; }
-      .contactame .contactameForm .form textarea {
-        height: 15vh; }
-    .contactame .contactameForm .botones {
-      width: 30vw;
-      padding-bottom: 8%;
-      display: flex;
-      justify-content: space-evenly;
-      align-items: center; }
-      .contactame .contactameForm .botones input[type="submit"], .contactame .contactameForm .botones .form textarea[type="submit"], .contactame .contactameForm .form .botones textarea[type="submit"] {
-        width: 6vw;
-        height: 3.5vh;
-        border: 0 solid;
-        border-radius: 7px;
-        background-color: #89df09;
-        color: #003E00; }
+      font-size: 1.5rem;
+      color: #D6FADB; }
+
+/* FOOTER PAGES */
+.footerPages p {
+  font-family: 'Tinos', serif;
+  font-size: 1rem;
+  text-align: center;
+  color: #D6FADB; }
 
 /*MEDIA QUERIES*/
 @media screen and (max-width: 1200px) {
-  .productos h1 {
-    font-size: 1.375rem; }
-  .productos h2 {
-    font-size: 1.375rem; }
+  .productos .prodTitulo {
+    font-size: 1.625rem; }
   .productos .planesContainer {
     width: 100vw; }
     .productos .planesContainer .planes {
-      width: 25vw; }
-      .productos .planesContainer .planes .planes {
-        width: 30vw; }
-      .productos .planesContainer .planes .planTitulo {
-        padding-bottom: 6%;
-        font-size: 1.125rem; }
-      .productos .planesContainer .planes .planDescripcion .queIncluye {
-        font-size: 1.125rem; }
-  /* SECCION 3 REXXTV */
-  .rexxtv .rexxtvContainerLeft .rexxtvTitulo {
-    padding-top: 5%;
+      width: 23vw; }
+  /* SECCION 4 FOOTER */
+  .footer .contenedorContacto .infocliente .form input {
     width: 18vw; }
-    .rexxtv .rexxtvContainerLeft .rexxtvTitulo h2 {
-      font-size: 1.625rem; }
+  .footer .contenedorContacto .infocliente .btn {
+    border: none;
+    border-radius: 8px;
+    padding: 1%;
+    text-align: center;
+    width: 12vw; }
+    .footer .contenedorContacto .infocliente .btn:hover {
+      box-shadow: inset 12vw 0 0 0 #D6FADB; }
   /* SOBRE MI */
   .contenedor .contenedorBiografia {
     padding-top: 6%; }
@@ -286,41 +268,18 @@
 
 @media screen and (max-width: 1024px) {
   /* SECCION 2 PRODUCTOS */
-  .productos {
-    padding-bottom: 2%; }
-    .productos h1 {
-      font-size: 1.4rem; }
-    .productos h2 {
-      padding-bottom: 2.5%;
-      font-size: 1.375rem; }
-    .productos .planesContainer {
-      width: 100vw; }
-      .productos .planesContainer .planes {
-        width: 30vw; }
-      .productos .planesContainer .planTitulo {
-        padding-bottom: 10%;
-        font-size: 1.375rem; }
-      .productos .planesContainer .planDescripcion .queIncluye {
-        font-size: 1.125rem; }
+  .productos .prodTitulo {
+    font-size: 1.75rem; }
+  .productos .planesContainer {
+    width: 100vw; }
+    .productos .planesContainer .planes {
+      width: 25vw; }
   /* SECCION 3 REXXTV */
   .rexxtv {
-    flex-direction: column;
-    align-content: center;
-    margin-bottom: 4%; }
-    .rexxtv .rexxtvContainerLeft {
-      width: 50vw;
-      padding: 3% 0 3% 5%; }
-      .rexxtv .rexxtvContainerLeft .rexxtvTitulo {
-        padding-top: 5%;
-        width: 20vw; }
-        .rexxtv .rexxtvContainerLeft .rexxtvTitulo h2 {
-          font-size: 1.75rem; }
+    margin: 12% 0; }
+    .rexxtv .rexxtvImagen {
+      width: 75%; }
   /* SECCION 4 CONTACTO */
-  .contacto {
-    margin-top: 0;
-    padding: 2%; }
-    .contacto .contactoRight h2 {
-      padding-bottom: 4%; }
   /* SOBRE MI */
   .contenedor .contenedorBiografia {
     padding-top: 6%;
@@ -329,166 +288,137 @@
       width: 40%; }
     .contenedor .contenedorBiografia .quiensoy, .contenedor .contenedorBiografia .hazdetucuerpo {
       width: 43vw; }
-      .contenedor .contenedorBiografia .quiensoy .biografiaTituloUp, .contenedor .contenedorBiografia .hazdetucuerpo .biografiaTituloUp, .contenedor .contenedorBiografia .quiensoy .biografiaDescripcionUp, .contenedor .contenedorBiografia .hazdetucuerpo .biografiaDescripcionUp, .contenedor .contenedorBiografia .hazdetucuerpo .biografiaDescripcion {
-        padding-bottom: 2%;
-        font-size: 1.125rem; }
       .contenedor .contenedorBiografia .quiensoy .biografiaDescripcionUp, .contenedor .contenedorBiografia .hazdetucuerpo .biografiaDescripcionUp {
-        font-size: 1.375rem; }
+        line-height: 1.5rem; }
     .contenedor .contenedorBiografia .hazdetucuerpo {
       width: 43vw; }
-      .contenedor .contenedorBiografia .hazdetucuerpo .biografiaTitulo {
-        font-size: 1.125rem; }
       .contenedor .contenedorBiografia .hazdetucuerpo .biografiaDescripcion {
-        font-size: 1.375rem; }
-  /* SOLICITAR */
-  .contactame {
-    margin-bottom: 15%;
-    margin-top: 10%; }
-    .contactame .contactameForm {
-      width: 60vw;
-      padding: 3% 5%; }
-      .contactame .contactameForm h1 {
-        padding: 4% 0 4% 0;
-        font-size: 1.375rem;
-        text-align: center; }
-      .contactame .contactameForm .infocliente {
-        width: 45vw; }
-      .contactame .contactameForm .form {
-        padding: 4%;
-        padding-left: 17%; }
-      .contactame .contactameForm .form input, .contactame .contactameForm .form textarea {
-        width: 30vw; }
-      .contactame .contactameForm .form textarea {
-        width: 30vw;
-        padding: 2%; }
-      .contactame .contactameForm .botones input[type="submit"], .contactame .contactameForm .botones .form textarea[type="submit"], .contactame .contactameForm .form .botones textarea[type="submit"] {
-        width: 12vw; } }
+        line-height: 1.5rem; } }
 
-@media screen and (max-width: 768px) {
-  /* SECCION 1 PRODUCTOS */
-  .productos h1, .productos h2 {
+@media screen and (max-width: 1024px) and (max-width: 768px) {
+  /* HEADER */
+  .navbar .container .navbar-collapse .nav-link {
     font-size: 1.125rem; }
+  /* SECCION 1 PRODUCTOS */
+  .productos .prodTitulo {
+    font-size: 1.5rem; }
   .productos .planesContainer {
     flex-direction: column;
-    align-items: center; }
+    align-items: center;
+    padding-top: 5%; }
     .productos .planesContainer .planes {
-      margin-bottom: 5%;
-      width: 38vw; }
-      .productos .planesContainer .planes .planTitulo {
-        font-size: 1.25rem; }
-      .productos .planesContainer .planes .planDescripcion {
-        font-size: 1.125rem;
-        line-height: 1.4rem; }
-      .productos .planesContainer .planes .queIncluye {
-        font-size: 1rem; }
+      margin-bottom: 8%;
+      width: 31vw; }
   /* SECCION REXXTV */
-  .rexxtv {
-    flex-direction: column;
-    align-content: center;
-    margin-bottom: 4%; }
-    .rexxtv .rexxtvContainerLeft {
-      width: 50vw;
-      padding: 0 0 5% 3%; }
-      .rexxtv .rexxtvContainerLeft .rexxtvTitulo {
-        padding-top: 5%;
-        width: 25vw; }
-        .rexxtv .rexxtvContainerLeft .rexxtvTitulo h2 {
-          font-size: 1.75rem; }
-  /* SECCION 4 CONTACTO */
-  .contactoLista h2 {
-    font-size: 1rem;
-    text-align: center; }
+  .rexxtv .rexxtvImagen {
+    width: 85%; }
+  /* SECCION 4 FOOTER */
+  .footer .contenedorContacto .infocliente .form input {
+    width: 25vw; }
+  .footer .contenedorContacto .infocliente .btn {
+    border: none;
+    border-radius: 8px;
+    padding: 1%;
+    text-align: center;
+    width: 16vw; }
+    .footer .contenedorContacto .infocliente .btn:hover {
+      box-shadow: inset 16vw 0 0 0 #D6FADB; }
   /* SOBRE MI */
   .contenedor .contenedorBiografia {
     padding-bottom: 8%;
     padding-top: 5%; }
-    .contenedor .contenedorBiografia img {
+    .contenedor .contenedorBiografia .biografiaImagen {
       width: 40vw; }
     .contenedor .contenedorBiografia .quiensoy, .contenedor .contenedorBiografia .hazdetucuerpo {
       width: 50vw;
       border: none; }
-      .contenedor .contenedorBiografia .quiensoy .biografiaTituloUp, .contenedor .contenedorBiografia .hazdetucuerpo .biografiaTituloUp, .contenedor .contenedorBiografia .quiensoy .biografiaDescripcionUp, .contenedor .contenedorBiografia .hazdetucuerpo .biografiaDescripcionUp, .contenedor .contenedorBiografia .hazdetucuerpo .biografiaDescripcion {
-        font-size: 1rem; }
       .contenedor .contenedorBiografia .quiensoy .biografiaDescripcionUp, .contenedor .contenedorBiografia .hazdetucuerpo .biografiaDescripcionUp {
-        font-size: 1.125rem;
         line-height: 1.6rem; }
     .contenedor .contenedorBiografia .hazdetucuerpo {
       width: 50vw;
       border: none; }
-      .contenedor .contenedorBiografia .hazdetucuerpo .biografiaTitulo {
-        font-size: 1rem; }
       .contenedor .contenedorBiografia .hazdetucuerpo .biografiaDescripcion {
-        font-size: 1.125rem;
         line-height: 1.6rem; }
-  /* SOLICITAR */
-  .contactame {
-    padding: 8% 0;
-    margin-bottom: 8%; }
-    .contactame .contactameForm .form {
-      padding-left: 11%; }
-    .contactame .contactameForm .form input, .contactame .contactameForm .form textarea, .contactame .contactameForm .form textarea {
-      width: 35vw; } }
+  /* PLANES DE ENTRENAMIENTO */
+  .PlanesDeEntrenamiento .pDETitulo {
+    font-size: 1.625rem; }
+  .PlanesDeEntrenamiento .pDESubtitulo {
+    font-size: 1.625rem; }
+  .PlanesDeEntrenamiento .planesDetalles .nombrePlan {
+    font-size: 1.5rem;
+    margin: 5% 0; }
+  .PlanesDeEntrenamiento .planesDetalles .descripcionPlan {
+    font-size: 1.375rem;
+    margin-bottom: 5%; }
+  .PlanesDeEntrenamiento .planesDetalles .queIncluye {
+    font-size: 1.375rem; } }
 
 @media screen and (max-width: 480px) {
   /* HEADER */
   .navbar .container .navbar-collapse .nav-link {
-    color: #E8F6D0;
     font-size: 1rem; }
   .navbar-brand img {
-    height: 12vh; }
+    height: 10vh; }
   /* SECCION 1 PRODUCTOS */
-  .productos h1, .productos h2 {
-    font-size: 1.125rem; }
-  .productos .planesContainer .planes {
-    padding: 4%;
-    margin-bottom: 5%;
-    width: 60vw;
-    border-radius: 12px; }
-    .productos .planesContainer .planes .planTitulo {
-      font-size: 1rem;
-      padding-bottom: 4%; }
-    .productos .planesContainer .planes p {
-      font-size: 1rem;
-      line-height: 1.3rem;
-      margin: 0; }
-    .productos .planesContainer .planes .queIncluye {
-      padding-bottom: 7%;
-      font-size: 1rem;
-      margin: 0; }
-    .productos .planesContainer .planes .botonSolicitar {
-      width: 40vw;
-      margin-left: 10%; }
+  .productos .prodTitulo {
+    font-size: 1.25rem; }
+  .productos .planesContainer {
+    padding-top: 10%; }
+    .productos .planesContainer .planes {
+      width: 50vw;
+      border-radius: 12px;
+      margin-bottom: 12%; }
+      .productos .planesContainer .planes .btn {
+        border: none;
+        border-radius: 8px;
+        padding: 2%;
+        text-align: center;
+        width: 30vw; }
+        .productos .planesContainer .planes .btn:hover {
+          box-shadow: inset 30vw 0 0 0 #3B4472; }
   /* SECCION REXXTV */
-  .rexxtv .rexxtvContainerLeft .rexxtvTitulo {
-    width: 35vw; }
-    .rexxtv .rexxtvContainerLeft .rexxtvTitulo h2 {
-      font-size: 1.375rem;
-      padding: 0; }
-  .rexxtv .rexxtvContainerLeft .rexxtvTexto {
-    font-size: 1.125rem;
-    line-height: 1.5rem; }
   .rexxtv .rexxtvImagen {
-    width: 80vw; }
-  /* SECCION 4 CONTACTO */
-  .contacto {
-    padding: 2%;
-    margin-top: 5%;
+    display: none; }
+  .rexxtv .rexxtvImgMobile {
+    display: initial;
+    width: 90%; }
+  /* SECCION 4 FOOTER */
+  .footer .contenedorContacto {
     display: flex;
-    justify-content: space-around;
-    align-content: center;
-    background-color: #00C85F; }
-    .contacto .contactoright {
-      font-size: 0.875rem; }
-      .contacto .contactoright h2 {
-        font-size: 0.875rem; }
-      .contacto .contactoright .contactoIcono {
-        height: 3vw;
-        padding-right: 4%; }
-    .contacto .contactoleft {
-      width: 18vw; }
-      .contacto .contactoleft .contactoIcono {
-        height: 5vw; }
-  .footer p {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly; }
+    .footer .contenedorContacto .contactame {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: space-between;
+      padding-top: 5%;
+      padding-bottom: 8%; }
+      .footer .contenedorContacto .contactame h2 {
+        font-size: 1.125rem; }
+      .footer .contenedorContacto .contactame .contactoIcono {
+        height: 4vw; }
+    .footer .contenedorContacto .infocliente {
+      padding-bottom: 12%; }
+      .footer .contenedorContacto .infocliente .form input {
+        width: 40vw; }
+      .footer .contenedorContacto .infocliente .btn {
+        border: none;
+        border-radius: 8px;
+        padding: 1%;
+        text-align: center;
+        width: 28vw; }
+        .footer .contenedorContacto .infocliente .btn:hover {
+          box-shadow: inset 28vw 0 0 0 #D6FADB; }
+    .footer .contenedorContacto .contactoRedes {
+      width: 25vw;
+      padding-bottom: 8%; }
+      .footer .contenedorContacto .contactoRedes .contactoIcono {
+        height: 6vw; }
+      .footer .contenedorContacto .contactoRedes .tiktok {
+        height: 6.5vw; }
+  .footer .leyenda {
     font-size: 0.875rem; }
   /* SOBRE MI */
   .contenedor .contenedorBiografia {
@@ -497,173 +427,153 @@
     padding-bottom: 6%;
     padding-top: 5%; }
     .contenedor .contenedorBiografia .biografiaImagen {
-      width: 60vw;
+      width: 80vw;
       padding-bottom: 5%; }
     .contenedor .contenedorBiografia .quiensoy, .contenedor .contenedorBiografia .hazdetucuerpo {
-      width: 100vw; }
+      width: 90vw; }
       .contenedor .contenedorBiografia .quiensoy .biografiaTituloUp, .contenedor .contenedorBiografia .hazdetucuerpo .biografiaTituloUp, .contenedor .contenedorBiografia .quiensoy .biografiaDescripcionUp, .contenedor .contenedorBiografia .hazdetucuerpo .biografiaDescripcionUp, .contenedor .contenedorBiografia .hazdetucuerpo .biografiaDescripcion {
-        font-size: 1rem; }
+        text-align: center;
+        font-size: 1rem;
+        color: #D6FADB; }
       .contenedor .contenedorBiografia .quiensoy .biografiaDescripcionUp, .contenedor .contenedorBiografia .hazdetucuerpo .biografiaDescripcionUp {
-        line-height: 1.35rem; }
+        line-height: 1.4rem; }
     .contenedor .contenedorBiografia .hazdetucuerpo {
-      width: 100vw; }
+      width: 90vw;
+      margin-bottom: 5%; }
       .contenedor .contenedorBiografia .hazdetucuerpo .biografiaTitulo {
-        font-size: 1rem; }
+        text-align: center;
+        font-size: 1rem;
+        color: #D6FADB; }
       .contenedor .contenedorBiografia .hazdetucuerpo .biografiaDescripcion {
-        line-height: 1.35rem; }
-    .contenedor .contenedorBiografia .biografiaImagen {
-      width: 60vw;
-      padding-top: 5%; }
-  /* SOLICITAR */
-  .contactame {
-    padding: 8% 0;
-    margin-bottom: 8%; }
-    .contactame .contactameForm {
-      width: 75vw; }
-      .contactame .contactameForm h1 {
-        font-size: 1.125rem; }
-      .contactame .contactameForm p {
-        font-size: 1.125rem;
-        line-height: 1.35rem; }
-      .contactame .contactameForm .infocliente {
-        width: 55vw; }
-      .contactame .contactameForm .form {
-        padding-left: 15%; }
-      .contactame .contactameForm .form input, .contactame .contactameForm .form textarea {
-        width: 40vw;
-        height: 7vh;
-        padding-left: 4%; }
-      .contactame .contactameForm .form textarea {
-        width: 40vw;
-        height: 25vh;
-        padding: 4%; }
-      .contactame .contactameForm .botones input[type="submit"], .contactame .contactameForm .botones .form textarea[type="submit"], .contactame .contactameForm .form .botones textarea[type="submit"] {
-        width: 18vw;
-        height: 8vh; } }
+        line-height: 1.4rem; }
+  /*PLANES DE ENTRENAMIENTO*/
+  .PlanesDeEntrenamiento .pDETitulo {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #D6FADB;
+    margin-top: 8%; }
+  .PlanesDeEntrenamiento .pDESubtitulo {
+    text-align: center;
+    font-size: 1.375rem;
+    color: #D6FADB; }
+  .PlanesDeEntrenamiento .planesDetalles {
+    width: 85vw;
+    padding: 2%;
+    margin-top: 10%; }
+    .PlanesDeEntrenamiento .planesDetalles .nombrePlan {
+      text-align: center;
+      font-size: 1.25rem;
+      color: #D6FADB;
+      margin: 5% 0; }
+    .PlanesDeEntrenamiento .planesDetalles .descripcionPlan {
+      text-align: center;
+      font-size: 1.25rem;
+      color: #D6FADB;
+      margin-bottom: 5%; }
+    .PlanesDeEntrenamiento .planesDetalles .queIncluye {
+      text-align: center;
+      font-size: 1.25rem;
+      color: #D6FADB;
+      padding-left: 0; } }
 
 @media screen and (max-width: 320px) {
   .navbar-brand img {
-    height: 10vh; }
+    height: 8vh; }
   /* SECCION 1 PRODUCTOS */
-  .productos h1 {
+  .productos .prodTitulo {
     font-size: 1rem; }
-  .productos h2 {
-    font-size: 0.875rem;
-    padding-bottom: 8%; }
-  .productos .planesContainer .planes {
-    border-radius: 12px;
-    padding: 4%;
-    margin-bottom: 10%;
-    width: 85vw; }
-    .productos .planesContainer .planes .planTitulo {
-      font-size: 1rem;
-      padding-top: 2%; }
-    .productos .planesContainer .planes .planDescripcion {
-      line-height: 1.3rem;
-      font-size: 0.75rem; }
-    .productos .planesContainer .planes .queIncluye {
-      font-size: 0.75rem; }
-    .productos .planesContainer .planes .botonSolicitar {
-      width: 50vw;
-      margin-left: 10%; }
-  /* SECCION REXXTV */
-  .rexxtv .rexxtvContainerLeft {
-    width: 65vw;
-    margin-top: 4%; }
-    .rexxtv .rexxtvContainerLeft .rexxtvTitulo {
-      width: 45vw; }
-      .rexxtv .rexxtvContainerLeft .rexxtvTitulo h2 {
-        font-size: 1rem;
-        padding: 0; }
-  @keyframes pulse {
-    0% {
-      transform: scale(1); }
-    50% {
-      transform: scale(1.1); }
-    75% {
-      transform: scale(1.2); }
-    100% {
-      transform: scale(1); } }
-    .rexxtv .rexxtvContainerLeft .rexxtvTexto {
-      font-size: 1rem;
-      line-height: 1.35rem; }
-  /* SECCION 4 CONTACTO */
-  .contacto {
-    padding: 2%;
-    margin-top: 8%;
-    display: flex;
-    align-items: center;
-    flex-direction: column; }
-    .contacto .contactoright {
-      font-size: 0.875rem; }
-      .contacto .contactoright h2 {
-        font-size: 0.875rem;
-        padding-top: 5%;
-        padding-bottom: 4%;
-        margin: 0; }
-      .contacto .contactoright .mail {
-        padding-top: 0;
-        padding: bottom 5%; }
-        .contacto .contactoright .mail .contactoIcono {
-          height: 5vw;
-          padding-right: 5%; }
-      .contacto .contactoright .wapp {
-        padding-top: 0;
-        padding: bottom 5%; }
-        .contacto .contactoright .wapp .contactoIcono {
-          height: 5vw;
-          padding-right: 5%; }
-    .contacto .contactoleft {
-      width: 50vw;
-      padding: 6% 15% 8% 0;
-      justify-content: space-evenly; }
-      .contacto .contactoleft .contactoIcono {
-        height: 7vw; }
-  .footer p {
-    font-size: 0.625rem; }
+  .productos .planesContainer {
+    padding-top: 10%; }
+    .productos .planesContainer .planes {
+      margin-bottom: 13%;
+      width: 75vw; }
+      .productos .planesContainer .planes .btn {
+        border: none;
+        border-radius: 8px;
+        padding: 2%;
+        text-align: center;
+        width: 40vw; }
+        .productos .planesContainer .planes .btn:hover {
+          box-shadow: inset 40vw 0 0 0 #3B4472; }
+  /* SECCION 4 FOOTER */
+  .footer .contenedorContacto .contactame {
+    padding-top: 8%;
+    padding-bottom: 10%; }
+    .footer .contenedorContacto .contactame .contactoIcono {
+      height: 6vw; }
+  .footer .contenedorContacto .infocliente {
+    padding-bottom: 15%; }
+    .footer .contenedorContacto .infocliente h2 {
+      font-size: 1.125rem;
+      text-align: center;
+      padding: 1%;
+      margin: 0; }
+    .footer .contenedorContacto .infocliente .form input {
+      width: 50vw; }
+    .footer .contenedorContacto .infocliente .btn {
+      border: none;
+      border-radius: 8px;
+      padding: 1%;
+      text-align: center;
+      width: 35vw; }
+      .footer .contenedorContacto .infocliente .btn:hover {
+        box-shadow: inset 35vw 0 0 0 #D6FADB; }
+  .footer .contenedorContacto .contactoRedes {
+    width: 40vw;
+    padding-bottom: 10%; }
+    .footer .contenedorContacto .contactoRedes .contactoIcono {
+      height: 10vw; }
+    .footer .contenedorContacto .contactoRedes .tiktok {
+      height: 10.5vw; }
+  .footer .leyenda {
+    font-size: 0.75rem; }
   /* SOBRE MI */
   .contenedor .contenedorBiografia {
     padding-bottom: 8%;
     padding-top: 5%; }
-    .contenedor .contenedorBiografia .biografiaImagen {
-      width: 75vw; }
     .contenedor .contenedorBiografia .quiensoy, .contenedor .contenedorBiografia .hazdetucuerpo {
-      width: 90vw; }
+      width: 90vw;
+      background-color: #111010; }
       .contenedor .contenedorBiografia .quiensoy .biografiaTituloUp, .contenedor .contenedorBiografia .hazdetucuerpo .biografiaTituloUp, .contenedor .contenedorBiografia .quiensoy .biografiaDescripcionUp, .contenedor .contenedorBiografia .hazdetucuerpo .biografiaDescripcionUp, .contenedor .contenedorBiografia .hazdetucuerpo .biografiaDescripcion {
-        font-size: 1rem; }
+        text-align: center;
+        font-size: 1rem;
+        color: #D6FADB; }
       .contenedor .contenedorBiografia .quiensoy .biografiaDescripcionUp, .contenedor .contenedorBiografia .hazdetucuerpo .biografiaDescripcionUp {
         font-size: 1rem;
         line-height: 1.3rem; }
     .contenedor .contenedorBiografia .hazdetucuerpo {
-      width: 90vw; }
+      width: 90vw;
+      background-color: #111010; }
       .contenedor .contenedorBiografia .hazdetucuerpo .biografiaTitulo {
-        font-size: 1rem; }
+        text-align: center;
+        font-size: 1rem;
+        color: #D6FADB; }
       .contenedor .contenedorBiografia .hazdetucuerpo .biografiaDescripcion {
         font-size: 1rem;
         line-height: 1.3rem; }
-  /* SOLICITAR */
-  .contactame .contactameForm {
-    width: 80vw; }
-    .contactame .contactameForm h1 {
-      padding-bottom: 6%;
-      font-size: 1rem; }
-    .contactame .contactameForm p {
-      padding-bottom: 8%;
-      font-size: 1rem; }
-    .contactame .contactameForm .infocliente {
-      width: 50vw;
-      padding-bottom: 3%;
-      padding-right: 11%; }
-    .contactame .contactameForm .form {
-      padding: 2%;
-      padding-bottom: 5%;
-      padding-right: 5%; }
-    .contactame .contactameForm .form input, .contactame .contactameForm .form textarea, .contactame .contactameForm .form textarea {
-      padding-left: 4%;
-      width: 53vw;
-      height: 4.5vh; }
-    .contactame .contactameForm .form textarea {
-      height: 15vh; }
-    .contactame .contactameForm .botones input[type="submit"], .contactame .contactameForm .botones .form textarea[type="submit"], .contactame .contactameForm .form .botones textarea[type="submit"] {
-      width: 32vw;
-      height: 6vh; } }
+  /*PLANES DE ENTRENAMIENTO*/
+  .PlanesDeEntrenamiento .pDETitulo {
+    text-align: center;
+    font-size: 1.25rem;
+    color: #D6FADB;
+    margin-top: 12%; }
+  .PlanesDeEntrenamiento .pDESubtitulo {
+    text-align: center;
+    font-size: 1.125rem;
+    color: #D6FADB; }
+  .PlanesDeEntrenamiento .planesDetalles {
+    margin-top: 12%; }
+    .PlanesDeEntrenamiento .planesDetalles .nombrePlan {
+      text-align: center;
+      font-size: 1.125rem;
+      color: #D6FADB;
+      margin: 7% 0; }
+    .PlanesDeEntrenamiento .planesDetalles .descripcionPlan {
+      text-align: center;
+      font-size: 1rem;
+      color: #D6FADB;
+      margin-bottom: 7%; }
+    .PlanesDeEntrenamiento .planesDetalles .queIncluye {
+      text-align: center;
+      font-size: 1rem;
+      color: #D6FADB; } }

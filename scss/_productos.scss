@@ -3,65 +3,52 @@
     margin-top: 2%;
     width: 100%;
 
-    h1{
-        padding: 0.2% 0 1.3% 0;
+    .prodTitulo{        
         text-align: center;
-        font-size: $size26;
+        font-size: $size30;
         color: $letraZpezial;
     }
 
-    h2{
-        font-size: $size22;
-        // padding-bottom: 2%;
-        text-align: center;
-        color: $letraZpezial;
-    }
-
-    .planesContainer{
+    .planesContainer{        
         padding-top: 3%;
         display: flex;
         justify-content: space-evenly;
 
         .planes {
-            width: 25vw;
-            padding: 2%;
-            border-radius: 25px;            
-            background: -webkit-linear-gradient(to bottom, #89df09, #00C85F);  /* Chrome 10-25, Safari 5.1-6 */
-            background: linear-gradient(to bottom, #89df09, #00C85F);  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-        
-            display: flex;
-            flex-direction: column;
-            justify-content: space-evenly;
+            background:$colorCard;
+            width: 20vw;      
+            border-radius: 15px;                    
+            text-align: center;
+            overflow: hidden;
+            @include flex(flex, column, center, space-between);
 
-            .planTitulo{
-                font-size: $size20;
-                text-align: center;
-                padding-bottom: 5%;
-                
+
+            img{
+                width:100%;
+                height: 25vh;
+                margin-bottom: 5%;
             }
             
+            .planTitulo{     
+                font-size: $size18;
+            }
+
             .planDescripcion{
-                padding: 5% 0;
-                font-size: $size16;
+                font-size: $size18;        
             }
-            
-            .queIncluye{
-                list-style-type: none;
-                font-family: 'Tinos', serif;
-                font-size: $size16;
-                padding: 4% 0;
-            }
+        
 
-            .botonSolicitar{
-                border: 2px solid $letraZpezial;
-                border-radius: 8px;
-                padding: 2%;
-                text-align: center;
-
-                &:hover{
-                    transform: scale(1.1);
-                    color: $lettering;
-                    border: 2px solid $lettering;
+            .btn{
+                @include btn(none,8px, 2%, center, 15vw);
+                box-shadow: inset 0 0 0 0 $colorAlt;
+                transition: ease-in-out 0.3s;
+                background-color: $colorDetashes;
+                color: $lettering;
+                margin: 2% 0;             
+    
+                &:hover{           
+                    box-shadow: inset 15vw 0 0 0 $colorAlt;
+                    color: $letraZpezial;
                 }
             }
         }

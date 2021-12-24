@@ -1,0 +1,93 @@
+/*CONTACTO*/
+.footer{
+    margin-top: 12%;
+    background-color:$colorDetashes;
+
+    .contenedorContacto{
+        @include flex(flex, row, center, space-evenly);
+
+        .contactame{
+            @include flex(flex, column, flex-start, space-between);
+   
+           h2{
+               font-size: $size20;
+            }
+   
+            .mail, .wapp{
+               display: flex;
+               align-items: center;
+                padding-top: 7%;
+   
+                .contactoRInfo{
+                    margin: 0;
+                    color: $colorAlt;
+               }
+            }
+   
+            .contactoIcono{
+               height: 2vw;
+               padding-right: 4%;
+            }
+        }
+
+    
+        .infocliente{
+            @include flex(flex, column, center, space-evenly);
+            padding: 2% 0;
+
+            h2{
+                @include textocard($size20, center, 1%);
+                margin: 0;
+            }
+
+            h3{
+                @include textocard($size16, center, 1%);   
+            }
+
+            .form{
+                padding-bottom: 3%;
+                input{
+                    width: 15vw;
+                    height: 4vh;
+                    padding-left: 4%;
+                    font-size: $size12;
+                    border-radius: 7px;
+                    border:none;
+                }
+            }
+
+            .btn{
+                @include btn(none,8px, 1%, center, 10vw);
+                box-shadow: inset 0 0 0 0 $letraZpezial;
+                transition: ease-in-out 0.3s;
+                background-color: $colorAlt;
+                color: $letraZpezial;
+                margin: 2% 0;             
+   
+                &:hover{           
+                    box-shadow: inset 10vw 0 0 0 $letraZpezial;
+                    color: $Letracard;
+                }
+            }
+        }    
+
+         .contactoRedes{
+             @include flex(flex, row, center, space-between);
+             align-content: center;
+             width: 15vw;
+    
+             .contactoIcono{
+                 height: 3.5vw;
+             }
+    
+             .tiktok{
+                 height: 4vw;
+            }
+        }
+    }
+    
+    .leyenda{
+        color: black;
+        text-align: center;
+    }
+}

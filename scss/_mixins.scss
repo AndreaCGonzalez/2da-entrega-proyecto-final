@@ -1,12 +1,28 @@
 
-@mixin quiensoy($pad, $font, $color) {
-    padding-bottom: $pad;
+
+@mixin bio($align, $font, $color) {
+    text-align: $align;
     font-size: $font;
     color: $color;
 }
 
-@mixin hazdetucuerpo($align, $font, $color) {
-    text-align: $align;
-    font-size: $font;
-    color: $color;
+@mixin flex($display, $dir, $al-items, $just-cont){
+    display:$display;
+    flex-direction: $dir;
+    align-items: $al-items;
+    justify-content: $just-cont;
+}
+
+@mixin textocard($size, $txtalign, $pad){
+    font-size: $size;    
+    text-align: $txtalign;
+    padding: $pad;
+}
+
+@mixin btn($border, $radius, $pad, $txtalign, $size){
+    border: $border;
+    border-radius: $radius;
+    padding: $pad;
+    text-align: $txtalign;
+    width: $size;
 }

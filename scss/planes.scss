@@ -1,0 +1,37 @@
+/*PLANES*/
+
+.PlanesDeEntrenamiento{
+    @include flex(flex, column, center, space-evenly);
+
+    .pDETitulo{
+        @include bio(center, $size30, $letraZpezial);
+        margin-top: 5%;
+    }
+
+    .pDESubtitulo{
+        @include bio(center, $size28, $letraZpezial);
+    }
+
+    .planesDetalles{
+        width: 80vw;
+        background-color: $colorAlt;
+        margin-top: 5%;
+        margin-bottom: 10%;
+        border-radius: 15px;
+
+        .nombrePlan{
+            @include bio(center, $size26, $letraZpezial);
+            margin: 3% 0;
+        }
+
+        .descripcionPlan{
+            @include bio(center, $size24, $letraZpezial);
+            margin-bottom: 3%;
+        }
+
+        .queIncluye{
+            list-style-type: none;
+            @include bio(center, $size24, $letraZpezial);
+        }
+    }
+}
