@@ -159,7 +159,7 @@
         height: 3.5vw; }
       .footer .contenedorContacto .contactoRedes .tiktok {
         height: 4vw; }
-  .footer .leyenda {
+  .footer .copy {
     color: black;
     text-align: center; }
 
@@ -234,13 +234,6 @@
       font-size: 1.25rem;
       color: #D6FADB; }
 
-/* FOOTER PAGES */
-.footerPages p {
-  font-family: 'Tinos', serif;
-  font-size: 1rem;
-  text-align: center;
-  color: #D6FADB; }
-
 /*MEDIA QUERIES*/
 @media screen and (max-width: 1200px) {
   .productos .prodTitulo {
@@ -279,7 +272,6 @@
     margin: 12% 0; }
     .rexxtv .rexxtvImagen {
       width: 75%; }
-  /* SECCION 4 CONTACTO */
   /* SOBRE MI */
   .contenedor .contenedorBiografia {
     padding-top: 6%;
@@ -295,7 +287,7 @@
       .contenedor .contenedorBiografia .hazdetucuerpo .biografiaDescripcion {
         line-height: 1.5rem; } }
 
-@media screen and (max-width: 1024px) and (max-width: 768px) {
+@media screen and (max-width: 768px) {
   /* HEADER */
   .navbar .container .navbar-collapse .nav-link {
     font-size: 1.125rem; }
@@ -383,7 +375,7 @@
   .rexxtv .rexxtvImgMobile {
     display: initial;
     width: 90%; }
-  /* SECCION 4 FOOTER */
+  /* FOOTER */
   .footer .contenedorContacto {
     display: flex;
     flex-direction: column;
@@ -392,9 +384,9 @@
     .footer .contenedorContacto .contactame {
       display: flex;
       flex-direction: column;
-      align-items: flex-start;
+      align-items: center;
       justify-content: space-between;
-      padding-top: 5%;
+      padding-top: 10%;
       padding-bottom: 8%; }
       .footer .contenedorContacto .contactame h2 {
         font-size: 1.125rem; }
@@ -419,7 +411,7 @@
         height: 6vw; }
       .footer .contenedorContacto .contactoRedes .tiktok {
         height: 6.5vw; }
-  .footer .leyenda {
+  .footer .copy {
     font-size: 0.875rem; }
   /* SOBRE MI */
   .contenedor .contenedorBiografia {
@@ -498,7 +490,7 @@
           box-shadow: inset 40vw 0 0 0 #3B4472; }
   /* SECCION 4 FOOTER */
   .footer .contenedorContacto .contactame {
-    padding-top: 8%;
+    padding-top: 15%;
     padding-bottom: 10%; }
     .footer .contenedorContacto .contactame .contactoIcono {
       height: 6vw; }
@@ -526,8 +518,8 @@
       height: 10vw; }
     .footer .contenedorContacto .contactoRedes .tiktok {
       height: 10.5vw; }
-  .footer .leyenda {
-    font-size: 0.75rem; }
+  .footer .copy {
+    font-size: 0.625rem; }
   /* SOBRE MI */
   .contenedor .contenedorBiografia {
     padding-bottom: 8%;

@@ -1,5 +1,5 @@
 //achicar letras en responsive
-//seccion solicitar imagen de pesas de fondo, sacar delineado del input con pseudoclase
+
 @import 'variables';
 @import 'mixins';
 
@@ -51,14 +51,6 @@
 
 @import 'planes';
 
-/* FOOTER PAGES */
-
-.footerPages p{
-    font-family: 'Tinos', serif;
-    font-size: $size16;
-    text-align: center;
-    color: $letraZpezial;
-}
 
 /*MEDIA QUERIES*/
 

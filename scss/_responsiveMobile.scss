@@ -62,15 +62,15 @@
     }
     
 
-    /* SECCION 4 FOOTER */
+    /* FOOTER */
     
     .footer{
         .contenedorContacto{
             @include flex(flex, column, center, space-evenly);
 
             .contactame{
-                @include flex(flex, column, flex-start, space-between);
-                padding-top: 5%;
+                @include flex(flex, column, center, space-between);
+                padding-top: 10%;
                 padding-bottom: 8%;
 
                h2{
@@ -114,7 +114,7 @@
             }
         }
 
-        .leyenda{
+        .copy{
             font-size: $size14;
         }
     }  
@@ -234,7 +234,6 @@
             }
         }
     }
-   
 
 
     /* SECCION 4 FOOTER */
@@ -243,7 +242,7 @@
         .contenedorContacto{
 
             .contactame{
-                padding-top: 8%;
+                padding-top: 15%;
                 padding-bottom: 10%;
        
                 .contactoIcono{
@@ -288,8 +287,8 @@
             }
         }
 
-        .leyenda{
-            font-size: $size12;
+        .copy{
+            font-size: $size10;
         }
     }
 
