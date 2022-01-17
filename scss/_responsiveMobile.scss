@@ -31,9 +31,18 @@
             padding-top: 10%;
             
             .planes{
-                width: 50vw;
+                width: 45vw;
                 border-radius: 12px;
                 margin-bottom: 12%;
+
+                img{
+                    height: 50vh;
+                }
+
+            .planDescripcion{
+                font-size: $size16;
+            }
+
 
                 .btn{
                     @include btn(none,8px, 2%, center, 30vw);
@@ -123,41 +132,25 @@
     /* SOBRE MI */
     .contenedor{
         .contenedorBiografia{
-            display: flex;
-            flex-direction: column;
             padding-bottom: 6%;
             padding-top: 5%;
 
             .biografiaImagen{
-                width: 80vw;
+                width: 60vw;
                 padding-bottom: 5%;
             }
 
             .quiensoy{
-                width: 90vw;               
-
-                .biografiaTituloUp{
-                    @include bio(center, $size16, $letraZpezial);
-                }
-
-                .biografiaDescripcionUp{
-                    @extend .biografiaTituloUp;
-                    line-height: 1.4rem;
-                }
-            }
-        
-            .hazdetucuerpo{
-                width: 90vw;
-                margin-bottom: 5%;              
+                width: 80vw;               
 
                 .biografiaTitulo{
                     @include bio(center, $size16, $letraZpezial);
                 }
 
                 .biografiaDescripcion{
-                    @extend .biografiaTituloUp;
+                    @include bio(center, $size16, $letraZpezial);
                     line-height: 1.4rem;
-                }                
+                }
             }
         }
     }
@@ -223,6 +216,10 @@
             .planes{
                 margin-bottom: 13%;
                 width: 75vw;
+
+                img{
+                     height: 35vh;
+                }
 
                 .btn{
                     @include btn(none,8px, 2%, center, 40vw);
@@ -301,29 +298,14 @@
             padding-top: 5%;
 
             .quiensoy{
-                width: 90vw;
-                background-color:$colorFondo;
-
-                .biografiaTituloUp{
-                    @include bio(center, $size16, $letraZpezial);
-                }
-
-                .biografiaDescripcionUp{
-                    font-size: $size16;
-                    line-height: 1.3rem;
-                }
-            }
-        
-            .hazdetucuerpo{
-                width: 90vw;
-                background-color:$colorFondo;           
+                width: 80vw;
 
                 .biografiaTitulo{
-                    @include bio(center, $size16, $letraZpezial);
+                    @include bio(center, $size14, $letraZpezial);
                 }
 
                 .biografiaDescripcion{
-                    font-size: $size16;
+                    font-size: $size14;
                     line-height: 1.3rem;
                 }
             }

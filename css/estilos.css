@@ -77,8 +77,15 @@
 .rexxtv {
   margin-top: 15%;
   display: flex;
-  align-content: center;
-  justify-content: center; }
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .rexxtv .rTVtitulo {
+    text-align: center;
+    font-size: 2.25rem;
+    color: #D6FADB;
+    font-family: 'Righteous', cursive;
+    padding-bottom: 3%; }
   .rexxtv .rexxtvImagen {
     width: 70%; }
   .rexxtv .rexxtvImgMobile {
@@ -97,7 +104,8 @@
       display: flex;
       flex-direction: column;
       align-items: flex-start;
-      justify-content: space-between; }
+      justify-content: space-between;
+      width: 16vw; }
       .footer .contenedorContacto .contactame h2 {
         font-size: 1.25rem; }
       .footer .contenedorContacto .contactame .mail, .footer .contenedorContacto .contactame .wapp {
@@ -173,29 +181,20 @@
   padding-top: 4%; }
   .contenedor .contenedorBiografia .biografiaImagen {
     width: 25%; }
-  .contenedor .contenedorBiografia .quiensoy, .contenedor .contenedorBiografia .hazdetucuerpo {
+  .contenedor .contenedorBiografia .quiensoy {
     width: 55vw;
     padding: 2%;
-    background-color: #3B4472;
-    border-radius: 10px; }
-    .contenedor .contenedorBiografia .quiensoy .biografiaTituloUp, .contenedor .contenedorBiografia .hazdetucuerpo .biografiaTituloUp, .contenedor .contenedorBiografia .quiensoy .biografiaDescripcionUp, .contenedor .contenedorBiografia .hazdetucuerpo .biografiaDescripcionUp, .contenedor .contenedorBiografia .hazdetucuerpo .biografiaDescripcion {
+    color: #D6FADB;
+    border-left: solid 3px #3B4472; }
+    .contenedor .contenedorBiografia .quiensoy .biografiaTitulo {
       text-align: justify;
       font-size: 1.125rem;
       color: #D6FADB;
       padding-top: 2%; }
-    .contenedor .contenedorBiografia .quiensoy .biografiaDescripcionUp, .contenedor .contenedorBiografia .hazdetucuerpo .biografiaDescripcionUp {
+    .contenedor .contenedorBiografia .quiensoy .biografiaDescripcion {
       text-align: justify;
       font-size: 1.125rem;
       color: #D6FADB; }
-  .contenedor .contenedorBiografia .hazdetucuerpo .biografiaTitulo {
-    text-align: justify;
-    font-size: 1.125rem;
-    color: #D6FADB;
-    padding-top: 2%; }
-  .contenedor .contenedorBiografia .hazdetucuerpo .biografiaDescripcion {
-    text-align: justify;
-    font-size: 1.125rem;
-    color: #D6FADB; }
 
 /*PLANES*/
 .PlanesDeEntrenamiento {
@@ -278,13 +277,9 @@
     padding-bottom: 10%; }
     .contenedor .contenedorBiografia .biografiaImagen {
       width: 40%; }
-    .contenedor .contenedorBiografia .quiensoy, .contenedor .contenedorBiografia .hazdetucuerpo {
+    .contenedor .contenedorBiografia .quiensoy {
       width: 43vw; }
-      .contenedor .contenedorBiografia .quiensoy .biografiaDescripcionUp, .contenedor .contenedorBiografia .hazdetucuerpo .biografiaDescripcionUp {
-        line-height: 1.5rem; }
-    .contenedor .contenedorBiografia .hazdetucuerpo {
-      width: 43vw; }
-      .contenedor .contenedorBiografia .hazdetucuerpo .biografiaDescripcion {
+      .contenedor .contenedorBiografia .quiensoy .biografiaDescripcion {
         line-height: 1.5rem; } }
 
 @media screen and (max-width: 768px) {
@@ -317,19 +312,18 @@
       box-shadow: inset 16vw 0 0 0 #D6FADB; }
   /* SOBRE MI */
   .contenedor .contenedorBiografia {
+    flex-direction: column;
     padding-bottom: 8%;
     padding-top: 5%; }
     .contenedor .contenedorBiografia .biografiaImagen {
-      width: 40vw; }
-    .contenedor .contenedorBiografia .quiensoy, .contenedor .contenedorBiografia .hazdetucuerpo {
-      width: 50vw;
+      width: 40vw;
+      margin-bottom: 5%; }
+    .contenedor .contenedorBiografia .quiensoy {
+      width: 70vw;
       border: none; }
-      .contenedor .contenedorBiografia .quiensoy .biografiaDescripcionUp, .contenedor .contenedorBiografia .hazdetucuerpo .biografiaDescripcionUp {
-        line-height: 1.6rem; }
-    .contenedor .contenedorBiografia .hazdetucuerpo {
-      width: 50vw;
-      border: none; }
-      .contenedor .contenedorBiografia .hazdetucuerpo .biografiaDescripcion {
+      .contenedor .contenedorBiografia .quiensoy .biografiaTitulo {
+        text-align: center; }
+      .contenedor .contenedorBiografia .quiensoy .biografiaDescripcion {
         line-height: 1.6rem; }
   /* PLANES DE ENTRENAMIENTO */
   .PlanesDeEntrenamiento .pDETitulo {
@@ -358,9 +352,13 @@
   .productos .planesContainer {
     padding-top: 10%; }
     .productos .planesContainer .planes {
-      width: 50vw;
+      width: 45vw;
       border-radius: 12px;
       margin-bottom: 12%; }
+      .productos .planesContainer .planes img {
+        height: 50vh; }
+      .productos .planesContainer .planes .planDescripcion {
+        font-size: 1rem; }
       .productos .planesContainer .planes .btn {
         border: none;
         border-radius: 8px;
@@ -415,29 +413,21 @@
     font-size: 0.875rem; }
   /* SOBRE MI */
   .contenedor .contenedorBiografia {
-    display: flex;
-    flex-direction: column;
     padding-bottom: 6%;
     padding-top: 5%; }
     .contenedor .contenedorBiografia .biografiaImagen {
-      width: 80vw;
+      width: 60vw;
       padding-bottom: 5%; }
-    .contenedor .contenedorBiografia .quiensoy, .contenedor .contenedorBiografia .hazdetucuerpo {
-      width: 90vw; }
-      .contenedor .contenedorBiografia .quiensoy .biografiaTituloUp, .contenedor .contenedorBiografia .hazdetucuerpo .biografiaTituloUp, .contenedor .contenedorBiografia .quiensoy .biografiaDescripcionUp, .contenedor .contenedorBiografia .hazdetucuerpo .biografiaDescripcionUp, .contenedor .contenedorBiografia .hazdetucuerpo .biografiaDescripcion {
+    .contenedor .contenedorBiografia .quiensoy {
+      width: 80vw; }
+      .contenedor .contenedorBiografia .quiensoy .biografiaTitulo {
         text-align: center;
         font-size: 1rem;
         color: #D6FADB; }
-      .contenedor .contenedorBiografia .quiensoy .biografiaDescripcionUp, .contenedor .contenedorBiografia .hazdetucuerpo .biografiaDescripcionUp {
-        line-height: 1.4rem; }
-    .contenedor .contenedorBiografia .hazdetucuerpo {
-      width: 90vw;
-      margin-bottom: 5%; }
-      .contenedor .contenedorBiografia .hazdetucuerpo .biografiaTitulo {
+      .contenedor .contenedorBiografia .quiensoy .biografiaDescripcion {
         text-align: center;
         font-size: 1rem;
-        color: #D6FADB; }
-      .contenedor .contenedorBiografia .hazdetucuerpo .biografiaDescripcion {
+        color: #D6FADB;
         line-height: 1.4rem; }
   /*PLANES DE ENTRENAMIENTO*/
   .PlanesDeEntrenamiento .pDETitulo {
@@ -480,6 +470,8 @@
     .productos .planesContainer .planes {
       margin-bottom: 13%;
       width: 75vw; }
+      .productos .planesContainer .planes img {
+        height: 35vh; }
       .productos .planesContainer .planes .btn {
         border: none;
         border-radius: 8px;
@@ -524,25 +516,14 @@
   .contenedor .contenedorBiografia {
     padding-bottom: 8%;
     padding-top: 5%; }
-    .contenedor .contenedorBiografia .quiensoy, .contenedor .contenedorBiografia .hazdetucuerpo {
-      width: 90vw;
-      background-color: #111010; }
-      .contenedor .contenedorBiografia .quiensoy .biografiaTituloUp, .contenedor .contenedorBiografia .hazdetucuerpo .biografiaTituloUp, .contenedor .contenedorBiografia .quiensoy .biografiaDescripcionUp, .contenedor .contenedorBiografia .hazdetucuerpo .biografiaDescripcionUp, .contenedor .contenedorBiografia .hazdetucuerpo .biografiaDescripcion {
+    .contenedor .contenedorBiografia .quiensoy {
+      width: 80vw; }
+      .contenedor .contenedorBiografia .quiensoy .biografiaTitulo {
         text-align: center;
-        font-size: 1rem;
+        font-size: 0.875rem;
         color: #D6FADB; }
-      .contenedor .contenedorBiografia .quiensoy .biografiaDescripcionUp, .contenedor .contenedorBiografia .hazdetucuerpo .biografiaDescripcionUp {
-        font-size: 1rem;
-        line-height: 1.3rem; }
-    .contenedor .contenedorBiografia .hazdetucuerpo {
-      width: 90vw;
-      background-color: #111010; }
-      .contenedor .contenedorBiografia .hazdetucuerpo .biografiaTitulo {
-        text-align: center;
-        font-size: 1rem;
-        color: #D6FADB; }
-      .contenedor .contenedorBiografia .hazdetucuerpo .biografiaDescripcion {
-        font-size: 1rem;
+      .contenedor .contenedorBiografia .quiensoy .biografiaDescripcion {
+        font-size: 0.875rem;
         line-height: 1.3rem; }
   /*PLANES DE ENTRENAMIENTO*/
   .PlanesDeEntrenamiento .pDETitulo {

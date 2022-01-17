@@ -8,7 +8,8 @@
 
         .contactame{
             @include flex(flex, column, flex-start, space-between);
-   
+            width: 16vw;
+
            h2{
                font-size: $size20;
             }

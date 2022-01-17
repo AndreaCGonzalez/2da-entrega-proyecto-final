@@ -16,31 +16,18 @@
          .quiensoy{
             width: 55vw;
             padding: 2%;
-            background-color: $colorAlt;
-            border-radius: 10px;
+            color: $letraZpezial;
+            border-left: solid 3px $colorAlt;
     
-            .biografiaTituloUp{
+            .biografiaTitulo{
                @include bio(justify, $size18, $letraZpezial);
                padding-top:2%;
-            }
-            
-            .biografiaDescripcionUp{
-                @include bio(justify, $size18, $letraZpezial);
-            }
-        }
-    
-        .hazdetucuerpo{
-             @extend .quiensoy;
-
-            .biografiaTitulo{
-                @include bio(justify, $size18, $letraZpezial);
-                padding-top: 2%;
             }
             
             .biografiaDescripcion{
                 @include bio(justify, $size18, $letraZpezial);
             }
-        }              
+        }            
     }
 }
 

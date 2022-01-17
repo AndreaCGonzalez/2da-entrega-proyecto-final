@@ -3,8 +3,15 @@
 .rexxtv{
     margin-top:15%;
     display: flex;
-    align-content: center;
+    flex-direction: column;
     justify-content: center;
+    align-items:center;
+
+    .rTVtitulo{
+        @include bio(center, $size36, $letraZpezial);
+        font-family: 'Righteous', cursive;
+        padding-bottom: 3%;
+    }
 
     .rexxtvImagen{
         width: 70%;

@@ -92,15 +92,7 @@
              .quiensoy{
                 width: 43vw;
                 
-                .biografiaDescripcionUp{                   
-                    line-height: 1.5rem;
-                }
-            }
-        
-            .hazdetucuerpo{
-                width: 43vw;
-                
-                .biografiaDescripcion{
+                .biografiaDescripcion{                   
                     line-height: 1.5rem;
                 }
             }
@@ -179,25 +171,22 @@
     /* SOBRE MI */
     .contenedor{
         .contenedorBiografia{
+            flex-direction: column;
             padding-bottom: 8%;
             padding-top: 5%;
 
             .biografiaImagen{
                 width: 40vw;
+                margin-bottom: 5%;
             }
 
             .quiensoy{
-                width: 50vw;
+                width: 70vw;
                 border: none;
 
-                .biografiaDescripcionUp{
-                    line-height: 1.6rem;
+                .biografiaTitulo{
+                    text-align: center;
                 }
-            }
-        
-            .hazdetucuerpo{
-                width: 50vw;
-                border: none;
 
                 .biografiaDescripcion{
                     line-height: 1.6rem;
