@@ -202,36 +202,50 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly; }
-  .PlanesDeEntrenamiento .pDETitulo {
-    text-align: center;
-    font-size: 1.625rem;
-    color: #D6FADB;
-    margin-top: 5%; }
-  .PlanesDeEntrenamiento .pDESubtitulo {
-    text-align: center;
-    font-size: 1.5rem;
-    color: #D6FADB; }
-  .PlanesDeEntrenamiento .planesDetalles {
-    width: 80vw;
-    background-color: #3B4472;
-    margin-top: 5%;
-    margin-bottom: 10%;
-    border-radius: 15px; }
-    .PlanesDeEntrenamiento .planesDetalles .nombrePlan {
+  .PlanesDeEntrenamiento .contenedorTitPDE {
+    background-image: url(../imagenes/pesasrusas.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    width: 100%; }
+    .PlanesDeEntrenamiento .contenedorTitPDE .pDETitulo {
       text-align: center;
-      font-size: 1.375rem;
+      font-size: 1.625rem;
       color: #D6FADB;
-      margin: 3% 0; }
-    .PlanesDeEntrenamiento .planesDetalles .descripcionPlan {
+      margin-top: 5%; }
+    .PlanesDeEntrenamiento .contenedorTitPDE .pDESubtitulo {
       text-align: center;
-      font-size: 1.375rem;
-      color: #D6FADB;
-      margin-bottom: 3%; }
-    .PlanesDeEntrenamiento .planesDetalles .queIncluye {
-      list-style-type: none;
-      text-align: center;
-      font-size: 1.25rem;
+      font-size: 1.5rem;
       color: #D6FADB; }
+  .PlanesDeEntrenamiento .ContenedorPDE {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 6%; }
+    .PlanesDeEntrenamiento .ContenedorPDE .planesDetalles {
+      width: 30vw;
+      height: 55vh;
+      border-left: 3px solid #3B4472;
+      margin-top: 5%;
+      margin-bottom: 10%; }
+      .PlanesDeEntrenamiento .ContenedorPDE .planesDetalles .nombrePlan {
+        text-align: center;
+        font-size: 1.25rem;
+        color: #D6FADB;
+        margin: 3% 0; }
+      .PlanesDeEntrenamiento .ContenedorPDE .planesDetalles .descripcionPlan {
+        text-align: center;
+        font-size: 1.25rem;
+        color: #D6FADB;
+        margin-bottom: 0;
+        padding: 3% 5% 5%; }
+      .PlanesDeEntrenamiento .ContenedorPDE .planesDetalles .queIncluye {
+        list-style-type: none;
+        text-align: center;
+        font-size: 1.125rem;
+        color: #D6FADB;
+        padding: 0; }
 
 /*MEDIA QUERIES*/
 @media screen and (max-width: 1200px) {
@@ -256,7 +270,10 @@
   .contenedor .contenedorBiografia {
     padding-top: 6%; }
     .contenedor .contenedorBiografia .biografiaImagen {
-      width: 30vw; } }
+      width: 30vw; }
+  /*PLANES*/
+  .PlanesDeEntrenamiento .planesDetalles {
+    height: 36vh; } }
 
 @media screen and (max-width: 1024px) {
   /* SECCION 2 PRODUCTOS */
@@ -271,6 +288,9 @@
     margin: 12% 0; }
     .rexxtv .rexxtvImagen {
       width: 75%; }
+  /* SECCION 4 FOOTER */
+  .footer .contenedorContacto .infocliente .form input {
+    width: 21vw; }
   /* SOBRE MI */
   .contenedor .contenedorBiografia {
     padding-top: 6%;
@@ -280,7 +300,16 @@
     .contenedor .contenedorBiografia .quiensoy {
       width: 43vw; }
       .contenedor .contenedorBiografia .quiensoy .biografiaDescripcion {
-        line-height: 1.5rem; } }
+        line-height: 1.5rem; }
+  /*PLANES*/
+  .PlanesDeEntrenamiento .ContenedorPDE .planesDetalles {
+    height: 45vh; }
+    .PlanesDeEntrenamiento .ContenedorPDE .planesDetalles .nombrePlan {
+      font-size: 1.125rem; }
+    .PlanesDeEntrenamiento .ContenedorPDE .planesDetalles .descripcionPlan {
+      font-size: 1.125rem; }
+    .PlanesDeEntrenamiento .ContenedorPDE .planesDetalles .queIncluye {
+      font-size: 1rem; } }
 
 @media screen and (max-width: 768px) {
   /* HEADER */
@@ -301,7 +330,8 @@
     width: 85%; }
   /* SECCION 4 FOOTER */
   .footer .contenedorContacto .infocliente .form input {
-    width: 25vw; }
+    width: 27vw;
+    height: 3vh; }
   .footer .contenedorContacto .infocliente .btn {
     border: none;
     border-radius: 8px;
@@ -325,20 +355,24 @@
         text-align: center; }
       .contenedor .contenedorBiografia .quiensoy .biografiaDescripcion {
         line-height: 1.6rem; }
-  /* PLANES DE ENTRENAMIENTO */
-  .PlanesDeEntrenamiento .pDETitulo {
+  /* PLANES */
+  .PlanesDeEntrenamiento .contenedorTitPDE
+.pDETitulo {
     font-size: 1.5rem; }
   .PlanesDeEntrenamiento .pDESubtitulo {
-    font-size: 1.5rem; }
-  .PlanesDeEntrenamiento .planesDetalles .nombrePlan {
-    font-size: 1.375rem;
-    margin: 5% 0; }
-  .PlanesDeEntrenamiento .planesDetalles .descripcionPlan {
-    font-size: 1.25rem;
-    margin-bottom: 5%;
-    padding: 2%; }
-  .PlanesDeEntrenamiento .planesDetalles .queIncluye {
-    font-size: 1.25rem; } }
+    font-size: 1.375rem; }
+  .PlanesDeEntrenamiento .ContenedorPDE {
+    flex-direction: column; }
+    .PlanesDeEntrenamiento .ContenedorPDE .planesDetalles {
+      width: 50vw;
+      height: 40vh;
+      border-bottom: 3px solid #3B4472; }
+      .PlanesDeEntrenamiento .ContenedorPDE .planesDetalles .nombrePlan {
+        font-size: 1.25rem; }
+      .PlanesDeEntrenamiento .ContenedorPDE .planesDetalles .descripcionPlan {
+        font-size: 1.25rem; }
+      .PlanesDeEntrenamiento .ContenedorPDE .planesDetalles .queIncluye {
+        font-size: 1.125rem; } }
 
 @media screen and (max-width: 480px) {
   /* HEADER */
@@ -389,11 +423,12 @@
       .footer .contenedorContacto .contactame h2 {
         font-size: 1.125rem; }
       .footer .contenedorContacto .contactame .contactoIcono {
-        height: 4vw; }
+        height: 5vw; }
     .footer .contenedorContacto .infocliente {
       padding-bottom: 12%; }
       .footer .contenedorContacto .infocliente .form input {
-        width: 40vw; }
+        width: 43vw;
+        height: 10vh; }
       .footer .contenedorContacto .infocliente .btn {
         border: none;
         border-radius: 8px;
@@ -403,12 +438,12 @@
         .footer .contenedorContacto .infocliente .btn:hover {
           box-shadow: inset 28vw 0 0 0 #D6FADB; }
     .footer .contenedorContacto .contactoRedes {
-      width: 25vw;
+      width: 35vw;
       padding-bottom: 8%; }
       .footer .contenedorContacto .contactoRedes .contactoIcono {
-        height: 6vw; }
+        height: 8vw; }
       .footer .contenedorContacto .contactoRedes .tiktok {
-        height: 6.5vw; }
+        height: 8.5vw; }
   .footer .copy {
     font-size: 0.875rem; }
   /* SOBRE MI */
@@ -429,35 +464,22 @@
         font-size: 1rem;
         color: #D6FADB;
         line-height: 1.4rem; }
-  /*PLANES DE ENTRENAMIENTO*/
-  .PlanesDeEntrenamiento .pDETitulo {
-    text-align: center;
-    font-size: 1.5rem;
-    color: #D6FADB;
+  /*PLANES*/
+  .PlanesDeEntrenamiento .contenedorTitPDE .pDETitulo {
+    font-size: 1.125rem; }
+  .PlanesDeEntrenamiento .contenedorTitPDE .pDESubtitulo {
+    font-size: 1.125rem; }
+  .PlanesDeEntrenamiento .ContenedorPDE {
     margin-top: 8%; }
-  .PlanesDeEntrenamiento .pDESubtitulo {
-    text-align: center;
-    font-size: 1.375rem;
-    color: #D6FADB; }
-  .PlanesDeEntrenamiento .planesDetalles {
-    width: 85vw;
-    padding: 2%;
-    margin-top: 10%; }
-    .PlanesDeEntrenamiento .planesDetalles .nombrePlan {
-      text-align: center;
-      font-size: 1.25rem;
-      color: #D6FADB;
-      margin: 5% 0; }
-    .PlanesDeEntrenamiento .planesDetalles .descripcionPlan {
-      text-align: center;
-      font-size: 1.25rem;
-      color: #D6FADB;
-      margin-bottom: 5%; }
-    .PlanesDeEntrenamiento .planesDetalles .queIncluye {
-      text-align: center;
-      font-size: 1.125rem;
-      color: #D6FADB;
-      padding-left: 0; } }
+    .PlanesDeEntrenamiento .ContenedorPDE .planesDetalles {
+      width: 80vw;
+      height: 100vh; }
+      .PlanesDeEntrenamiento .ContenedorPDE .planesDetalles .nombrePlan {
+        font-size: 1.125rem; }
+      .PlanesDeEntrenamiento .ContenedorPDE .planesDetalles .descripcionPlan {
+        font-size: 1.125rem; }
+      .PlanesDeEntrenamiento .ContenedorPDE .planesDetalles .queIncluye {
+        font-size: 1rem; } }
 
 @media screen and (max-width: 320px) {
   .navbar-brand img {
@@ -483,18 +505,19 @@
   /* SECCION 4 FOOTER */
   .footer .contenedorContacto .contactame {
     padding-top: 15%;
-    padding-bottom: 10%; }
+    padding-bottom: 12%; }
     .footer .contenedorContacto .contactame .contactoIcono {
-      height: 6vw; }
+      height: 7vw; }
   .footer .contenedorContacto .infocliente {
-    padding-bottom: 15%; }
+    padding-bottom: 17%; }
     .footer .contenedorContacto .infocliente h2 {
       font-size: 1.125rem;
       text-align: center;
       padding: 1%;
       margin: 0; }
     .footer .contenedorContacto .infocliente .form input {
-      width: 50vw; }
+      width: 60vw;
+      height: 7vh; }
     .footer .contenedorContacto .infocliente .btn {
       border: none;
       border-radius: 8px;
@@ -504,12 +527,12 @@
       .footer .contenedorContacto .infocliente .btn:hover {
         box-shadow: inset 35vw 0 0 0 #D6FADB; }
   .footer .contenedorContacto .contactoRedes {
-    width: 40vw;
-    padding-bottom: 10%; }
+    width: 42vw;
+    padding-bottom: 12%; }
     .footer .contenedorContacto .contactoRedes .contactoIcono {
-      height: 10vw; }
+      height: 11vw; }
     .footer .contenedorContacto .contactoRedes .tiktok {
-      height: 10.5vw; }
+      height: 11.5vw; }
   .footer .copy {
     font-size: 0.625rem; }
   /* SOBRE MI */
@@ -526,28 +549,21 @@
         font-size: 0.875rem;
         line-height: 1.3rem; }
   /*PLANES DE ENTRENAMIENTO*/
-  .PlanesDeEntrenamiento .pDETitulo {
-    text-align: center;
-    font-size: 1.25rem;
-    color: #D6FADB;
+  /*PLANES*/
+  .PlanesDeEntrenamiento .contenedorTitPDE .pDETitulo {
+    font-size: 1rem;
     margin-top: 12%; }
-  .PlanesDeEntrenamiento .pDESubtitulo {
-    text-align: center;
-    font-size: 1.125rem;
-    color: #D6FADB; }
-  .PlanesDeEntrenamiento .planesDetalles {
-    margin-top: 12%; }
-    .PlanesDeEntrenamiento .planesDetalles .nombrePlan {
-      text-align: center;
-      font-size: 1.125rem;
-      color: #D6FADB;
-      margin: 7% 0; }
-    .PlanesDeEntrenamiento .planesDetalles .descripcionPlan {
-      text-align: center;
-      font-size: 1rem;
-      color: #D6FADB;
-      margin-bottom: 7%; }
-    .PlanesDeEntrenamiento .planesDetalles .queIncluye {
-      text-align: center;
-      font-size: 1rem;
-      color: #D6FADB; } }
+  .PlanesDeEntrenamiento .contenedorTitPDE .pDESubtitulo {
+    font-size: 1rem; }
+  .PlanesDeEntrenamiento .ContenedorPDE {
+    margin-top: 8%; }
+    .PlanesDeEntrenamiento .ContenedorPDE .planesDetalles {
+      height: 70vh;
+      margin-top: 12%; }
+      .PlanesDeEntrenamiento .ContenedorPDE .planesDetalles .nombrePlan {
+        font-size: 1rem;
+        margin: 7% 0; }
+      .PlanesDeEntrenamiento .ContenedorPDE .planesDetalles .descripcionPlan {
+        font-size: 1rem; }
+      .PlanesDeEntrenamiento .ContenedorPDE .planesDetalles .queIncluye {
+        font-size: 0.875rem; } }

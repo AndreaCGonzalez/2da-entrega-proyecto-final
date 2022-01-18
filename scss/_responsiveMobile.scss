@@ -87,7 +87,7 @@
                 }
        
                 .contactoIcono{
-                   height: 4vw;
+                   height: 5vw;
                 }
             }
 
@@ -96,7 +96,8 @@
 
                 .form{
                     input{
-                        width: 40vw;
+                        width: 43vw;
+                        height: 10vh;
                     }
                 }
 
@@ -110,15 +111,15 @@
             }
 
             .contactoRedes{
-                width: 25vw;
+                width: 35vw;
                 padding-bottom: 8%;
 
                 .contactoIcono{
-                    height: 6vw;
+                    height: 8vw;
                 }
        
                 .tiktok{
-                    height: 6.5vw;
+                    height: 8.5vw;
                }
             }
         }
@@ -156,39 +157,39 @@
     }
 
 
-    /*PLANES DE ENTRENAMIENTO*/
+    /*PLANES*/
 
     .PlanesDeEntrenamiento{
-
-        .pDETitulo{
-            @include bio(center, $size24, $letraZpezial);
+        .contenedorTitPDE{
+            .pDETitulo{
+                font-size: $size18;
+            }
+    
+            .pDESubtitulo{
+                font-size: $size18;
+            }
+        }
+        
+        .ContenedorPDE{
             margin-top: 8%;
-        }
 
-        .pDESubtitulo{
-            @include bio(center, $size22, $letraZpezial);
-        }
-
-        .planesDetalles{
-            width: 85vw;
-            padding:2%;
-            margin-top: 10%;
-
-            .nombrePlan{
-                @include bio(center, $size20, $letraZpezial);
-                margin: 5% 0;
+            .planesDetalles{
+                width: 80vw;
+                height: 100vh;
+    
+                .nombrePlan{
+                    font-size: $size18;
+                }
+    
+                .descripcionPlan{
+                    font-size: $size18;
+                }
+    
+                .queIncluye{
+                    font-size: $size16;
+                }
             }
-
-            .descripcionPlan{
-                @include bio(center, $size20, $letraZpezial);
-                margin-bottom: 5%;
-            }
-
-            .queIncluye{
-                @include bio(center, $size18, $letraZpezial);
-                padding-left: 0;
-            }
-        }
+        }  
     }
 }  
 
@@ -240,15 +241,15 @@
 
             .contactame{
                 padding-top: 15%;
-                padding-bottom: 10%;
+                padding-bottom: 12%;
        
                 .contactoIcono{
-                   height: 6vw;
+                   height: 7vw;
                 }
             }
 
             .infocliente{
-                padding-bottom: 15%;
+                padding-bottom: 17%;
 
                 h2{
                     @include textocard($size18, center, 1%);
@@ -257,7 +258,8 @@
 
                 .form{
                     input{
-                        width: 50vw;
+                        width: 60vw;
+                        height: 7vh;
                     }
                 }
 
@@ -271,15 +273,15 @@
             }
 
             .contactoRedes{
-                width: 40vw;
-                padding-bottom: 10%;
+                width: 42vw;
+                padding-bottom: 12%;
 
                 .contactoIcono{
-                    height: 10vw;
+                    height: 11vw;
                 }
        
                 .tiktok{
-                    height: 10.5vw;
+                    height: 11.5vw;
                }
             }
         }
@@ -315,32 +317,39 @@
 
     /*PLANES DE ENTRENAMIENTO*/
 
-    .PlanesDeEntrenamiento{
+     /*PLANES*/
 
-        .pDETitulo{
-            @include bio(center, $size20, $letraZpezial);
-            margin-top: 12%;
-        }
-
-        .pDESubtitulo{
-            @include bio(center, $size18, $letraZpezial);
-        }
-
-        .planesDetalles{
-            margin-top: 12%;
-
-            .nombrePlan{
-                @include bio(center, $size18, $letraZpezial);
-                margin: 7% 0;
+     .PlanesDeEntrenamiento{
+        .contenedorTitPDE{
+            .pDETitulo{
+                font-size: $size16;
+                margin-top: 12%;
             }
-
-            .descripcionPlan{
-                @include bio(center, $size16, $letraZpezial);
-                margin-bottom: 7%;
+    
+            .pDESubtitulo{
+                font-size: $size16;
             }
+        }
+        
+        .ContenedorPDE{
+            margin-top: 8%;
 
-            .queIncluye{
-                @include bio(center, $size16, $letraZpezial);
+            .planesDetalles{
+                height: 70vh;
+                margin-top: 12%;
+    
+                .nombrePlan{
+                    font-size: $size16;
+                    margin: 7% 0;
+                }
+    
+                .descripcionPlan{
+                    font-size: $size16;
+                }
+    
+                .queIncluye{
+                    font-size: $size14;
+                }
             }
         }
     }

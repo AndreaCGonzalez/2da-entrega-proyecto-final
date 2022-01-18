@@ -3,35 +3,51 @@
 .PlanesDeEntrenamiento{
     @include flex(flex, column, center, space-evenly);
 
-    .pDETitulo{
-        @include bio(center, $size26, $letraZpezial);
-        margin-top: 5%;
-    }
+    .contenedorTitPDE{
+        background-image: url(../imagenes/pesasrusas.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: bottom;
+        width: 100%;
 
-    .pDESubtitulo{
-        @include bio(center, $size24, $letraZpezial);
-    }
-
-    .planesDetalles{
-        width: 80vw;
-        background-color: $colorAlt;
-        margin-top: 5%;
-        margin-bottom: 10%;
-        border-radius: 15px;
-
-        .nombrePlan{
-            @include bio(center, $size22, $letraZpezial);
-            margin: 3% 0;
+        .pDETitulo{
+            @include bio(center, $size26, $letraZpezial);
+            margin-top: 5%;
         }
-
-        .descripcionPlan{
-            @include bio(center, $size22, $letraZpezial);
-            margin-bottom: 3%;
+    
+        .pDESubtitulo{
+            @include bio(center, $size24, $letraZpezial);
         }
+    }
+    
 
-        .queIncluye{
-            list-style-type: none;
-            @include bio(center, $size20, $letraZpezial);
+    .ContenedorPDE{
+        @include flex(flex, row, center, space-evenly);
+        margin-top: 6%;
+
+        .planesDetalles{
+            width: 30vw;
+            height: 55vh;
+            border-left: 3px solid $colorAlt;
+            margin-top: 5%;
+            margin-bottom: 10%;
+    
+            .nombrePlan{
+                @include bio(center, $size20, $letraZpezial);
+                margin: 3% 0;
+            }
+    
+            .descripcionPlan{
+                @include bio(center, $size20, $letraZpezial);
+                margin-bottom: 0;
+                padding:3% 5% 5%;
+            }
+    
+            .queIncluye{
+                list-style-type: none;
+                @include bio(center, $size18, $letraZpezial);
+                padding:0;
+            }
         }
     }
 }

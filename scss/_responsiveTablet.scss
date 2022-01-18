@@ -49,6 +49,14 @@
             }
         }
     }   
+
+    /*PLANES*/
+
+    .PlanesDeEntrenamiento{
+        .planesDetalles{
+            height: 36vh;
+        }
+    }
 }
 
 
@@ -77,7 +85,20 @@
         .rexxtvImagen{
             width: 75%;
         }
-    }  
+    } 
+
+    /* SECCION 4 FOOTER */
+    .footer{
+        .contenedorContacto{
+            .infocliente{
+                .form{
+                    input{
+                        width: 21vw;
+                    }
+                }
+            }
+        }
+    }
 
     /* SOBRE MI */
     .contenedor{
@@ -97,6 +118,28 @@
                 }
             }
         }
+    }
+
+     /*PLANES*/
+
+     .PlanesDeEntrenamiento{
+        .ContenedorPDE{
+            .planesDetalles{
+                height: 45vh;
+    
+                .nombrePlan{
+                    font-size: $size18;
+                }
+        
+                .descripcionPlan{
+                    font-size: $size18;
+                }
+        
+                .queIncluye{
+                    font-size: $size16;
+                }
+            }
+        }   
     }
 } 
 
@@ -151,7 +194,8 @@
             .infocliente{
                 .form{
                     input{
-                        width: 25vw;
+                        width: 27vw;
+                        height: 3vh;
                     }
                 }
 
@@ -164,9 +208,7 @@
                 }
             }
         }
-    } 
-
-
+    }
 
     /* SOBRE MI */
     .contenedor{
@@ -195,32 +237,40 @@
         }
     }
 
-    /* PLANES DE ENTRENAMIENTO */
+    /* PLANES */
 
     .PlanesDeEntrenamiento{
-        .pDETitulo{
-            font-size: $size24;
-        }
 
-        .pDESubtitulo{
-            font-size: $size24;
-        }
+        .contenedorTitPDE
+            .pDETitulo{
+                font-size: $size24;
+            }
 
-        .planesDetalles{    
-            .nombrePlan{
+            .pDESubtitulo{
                 font-size: $size22;
-                margin: 5% 0;
             }
-    
-            .descripcionPlan{
-                font-size: $size20;
-                margin-bottom: 5%;
-                padding: 2%;
-            }
-    
-            .queIncluye{
-                font-size: $size20;
+
+        .ContenedorPDE{
+            flex-direction: column;
+
+            .planesDetalles{
+                width: 50vw;
+                height: 40vh;
+                border-bottom: 3px solid $colorAlt;
+                
+                .nombrePlan{
+                    font-size: $size20;
+                }
+        
+                .descripcionPlan{
+                    font-size: $size20;
+                }
+        
+                .queIncluye{
+                    font-size: $size18;
+                }
             }
         }
+        
     }
 }
