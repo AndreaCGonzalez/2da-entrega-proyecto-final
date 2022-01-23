@@ -9,48 +9,56 @@
         color: $letraZpezial;
     }
 
-    .planesContainer{        
+    .contenedorCard{        
         padding-top: 3%;
         display: flex;
         justify-content: space-evenly;
 
-        .planes {
-            background:$colorCard;
-            width: 20vw;      
-            border-radius: 15px;                    
-            text-align: center;
+        .planesCard {
+            background-color:$colorCard;
+            width: 18vw;      
+            border-radius: 12px;
+            padding: 0.5%;
             overflow: hidden;
-            @include flex(flex, column, center, space-between);
-
 
             img{
                 width: 100%;
                 height: 25vh;
+                border-radius: 12px;
                 margin-bottom: 5%;
+
+                object-fit: cover;
             }
-            
-            .planTitulo{     
-                font-size: $size18;
+
+            .planTitulo{
+                @include textocard($size18, center, 4%);
+                padding-top: 2%;
             }
 
             .planDescripcion{
-                font-size: $size18;        
+                @include textocard($size18, center, inherit);  
+                padding: 4% 2% 6%;
             }
         
 
             .btn{
-                @include btn(none,8px, 2%, center, 15vw);
+                @include btn(none,8px, 2%, center, 12vw);
                 box-shadow: inset 0 0 0 0 $colorAlt;
                 transition: ease-in-out 0.3s;
                 background-color: $colorDetashes;
                 color: $lettering;
-                margin: 2% 0;             
+                margin: 0 auto; 
+                display: block;          
     
                 &:hover{           
-                    box-shadow: inset 15vw 0 0 0 $colorAlt;
+                    box-shadow: inset 12vw 0 0 0 $colorAlt;
                     color: $letraZpezial;
                 }
-            }
+
+                a{
+                    font-weight: 501;
+                }
+            }   
         }
     }
 }

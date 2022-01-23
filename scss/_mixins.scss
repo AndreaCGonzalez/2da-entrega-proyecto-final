@@ -13,10 +13,10 @@
     justify-content: $just-cont;
 }
 
-@mixin textocard($size, $txtalign, $pad){
+@mixin textocard($size, $txtalign, $margintop){
     font-size: $size;    
     text-align: $txtalign;
-    padding: $pad;
+    margin-top: $margintop;
 }
 
 @mixin btn($border, $radius, $pad, $txtalign, $size){

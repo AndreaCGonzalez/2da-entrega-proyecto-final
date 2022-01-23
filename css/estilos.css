@@ -36,60 +36,75 @@
     text-align: center;
     font-size: 1.875rem;
     color: #D6FADB; }
-  .productos .planesContainer {
+  .productos .contenedorCard {
     padding-top: 3%;
     display: flex;
     justify-content: space-evenly; }
-    .productos .planesContainer .planes {
-      background: #ffffffbb;
-      width: 20vw;
-      border-radius: 15px;
-      text-align: center;
-      overflow: hidden;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: space-between; }
-      .productos .planesContainer .planes img {
+    .productos .contenedorCard .planesCard {
+      background-color: #ffffffbb;
+      width: 18vw;
+      border-radius: 12px;
+      padding: 0.5%;
+      overflow: hidden; }
+      .productos .contenedorCard .planesCard img {
         width: 100%;
         height: 25vh;
-        margin-bottom: 5%; }
-      .productos .planesContainer .planes .planTitulo {
-        font-size: 1.125rem; }
-      .productos .planesContainer .planes .planDescripcion {
-        font-size: 1.125rem; }
-      .productos .planesContainer .planes .btn {
+        border-radius: 12px;
+        margin-bottom: 5%;
+        object-fit: cover; }
+      .productos .contenedorCard .planesCard .planTitulo {
+        font-size: 1.125rem;
+        text-align: center;
+        margin-top: 4%;
+        padding-top: 2%; }
+      .productos .contenedorCard .planesCard .planDescripcion {
+        font-size: 1.125rem;
+        text-align: center;
+        margin-top: inherit;
+        padding: 4% 2% 6%; }
+      .productos .contenedorCard .planesCard .btn {
         border: none;
         border-radius: 8px;
         padding: 2%;
         text-align: center;
-        width: 15vw;
+        width: 12vw;
         box-shadow: inset 0 0 0 0 #3B4472;
         transition: ease-in-out 0.3s;
         background-color: #00C85F;
         color: #003E00;
-        margin: 2% 0; }
-        .productos .planesContainer .planes .btn:hover {
-          box-shadow: inset 15vw 0 0 0 #3B4472;
+        margin: 0 auto;
+        display: block; }
+        .productos .contenedorCard .planesCard .btn:hover {
+          box-shadow: inset 12vw 0 0 0 #3B4472;
           color: #D6FADB; }
+        .productos .contenedorCard .planesCard .btn a {
+          font-weight: 501; }
 
 /*RexxTV*/
 .rexxtv {
   margin-top: 15%;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; }
-  .rexxtv .rTVtitulo {
-    text-align: center;
-    font-size: 2.25rem;
-    color: #D6FADB;
-    font-family: 'Righteous', cursive;
-    padding-bottom: 3%; }
-  .rexxtv .rexxtvImagen {
-    width: 70%; }
-  .rexxtv .rexxtvImgMobile {
-    display: none; }
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly; }
+  .rexxtv .rexxtvTexto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50vw; }
+    .rexxtv .rexxtvTexto .rextvTit {
+      font-size: 1.625rem;
+      text-align: center;
+      margin-top: 4%;
+      color: #D6FADB; }
+    .rexxtv .rexxtvTexto .rextvdesc {
+      font-size: 1.5rem;
+      text-align: center;
+      margin-top: 10%;
+      color: #D6FADB; }
+    .rexxtv .rexxtvTexto .btn {
+      margin-top: 10%; }
 
 /*CONTACTO*/
 .footer {
@@ -127,12 +142,12 @@
       .footer .contenedorContacto .infocliente h2 {
         font-size: 1.25rem;
         text-align: center;
-        padding: 1%;
+        margin-top: 1%;
         margin: 0; }
       .footer .contenedorContacto .infocliente h3 {
         font-size: 1rem;
         text-align: center;
-        padding: 1%; }
+        margin-top: 1%; }
       .footer .contenedorContacto .infocliente .form {
         padding-bottom: 3%; }
         .footer .contenedorContacto .infocliente .form input {
@@ -251,10 +266,8 @@
 @media screen and (max-width: 1200px) {
   .productos .prodTitulo {
     font-size: 1.625rem; }
-  .productos .planesContainer {
-    width: 100vw; }
-    .productos .planesContainer .planes {
-      width: 23vw; }
+  .productos .contenedorCard .planesCard {
+    width: 22vw; }
   /* SECCION 4 FOOTER */
   .footer .contenedorContacto .infocliente .form input {
     width: 18vw; }
@@ -277,12 +290,9 @@
 
 @media screen and (max-width: 1024px) {
   /* SECCION 2 PRODUCTOS */
-  .productos .prodTitulo {
-    font-size: 1.75rem; }
-  .productos .planesContainer {
-    width: 100vw; }
-    .productos .planesContainer .planes {
-      width: 25vw; }
+  .productos .contenedorCard .planesCard {
+    width: 24vw;
+    padding: 0.6%; }
   /* SECCION 3 REXXTV */
   .rexxtv {
     margin: 12% 0; }
@@ -318,13 +328,25 @@
   /* SECCION 1 PRODUCTOS */
   .productos .prodTitulo {
     font-size: 1.5rem; }
-  .productos .planesContainer {
-    flex-direction: column;
-    align-items: center;
-    padding-top: 5%; }
-    .productos .planesContainer .planes {
-      margin-bottom: 8%;
-      width: 31vw; }
+  .productos .contenedorCard {
+    flex-direction: column; }
+    .productos .contenedorCard .planesCard {
+      width: 40vw;
+      margin: 0 auto;
+      margin-top: 8%;
+      padding: 1%; }
+      .productos .contenedorCard .planesCard .planTitulo {
+        font-size: 1.25rem; }
+      .productos .contenedorCard .planesCard .planDescripcion {
+        font-size: 1.25rem; }
+      .productos .contenedorCard .planesCard .btn {
+        border: none;
+        border-radius: 8px;
+        padding: 2%;
+        text-align: center;
+        width: 23vw; }
+        .productos .contenedorCard .planesCard .btn:hover {
+          box-shadow: inset 23vw 0 0 0 #3B4472; }
   /* SECCION REXXTV */
   .rexxtv .rexxtvImagen {
     width: 85%; }
@@ -383,24 +405,25 @@
   /* SECCION 1 PRODUCTOS */
   .productos .prodTitulo {
     font-size: 1.25rem; }
-  .productos .planesContainer {
-    padding-top: 10%; }
-    .productos .planesContainer .planes {
-      width: 45vw;
-      border-radius: 12px;
-      margin-bottom: 12%; }
-      .productos .planesContainer .planes img {
-        height: 50vh; }
-      .productos .planesContainer .planes .planDescripcion {
-        font-size: 1rem; }
-      .productos .planesContainer .planes .btn {
-        border: none;
-        border-radius: 8px;
-        padding: 2%;
-        text-align: center;
-        width: 30vw; }
-        .productos .planesContainer .planes .btn:hover {
-          box-shadow: inset 30vw 0 0 0 #3B4472; }
+  .productos .contenedorCard .planesCard {
+    width: 48vw;
+    padding: 1.2%; }
+    .productos .contenedorCard .planesCard img {
+      height: 45vh; }
+    .productos .contenedorCard .planesCard .planTitulo {
+      font-size: 1rem; }
+    .productos .contenedorCard .planesCard .planDescripcion {
+      font-size: 1rem;
+      padding: 0 2% 8%;
+      margin: 0; }
+    .productos .contenedorCard .planesCard .btn {
+      border: none;
+      border-radius: 8px;
+      padding: 2%;
+      text-align: center;
+      width: 24vw; }
+      .productos .contenedorCard .planesCard .btn:hover {
+        box-shadow: inset 24vw 0 0 0 #3B4472; }
   /* SECCION REXXTV */
   .rexxtv .rexxtvImagen {
     display: none; }
@@ -487,21 +510,25 @@
   /* SECCION 1 PRODUCTOS */
   .productos .prodTitulo {
     font-size: 1rem; }
-  .productos .planesContainer {
-    padding-top: 10%; }
-    .productos .planesContainer .planes {
-      margin-bottom: 13%;
-      width: 75vw; }
-      .productos .planesContainer .planes img {
-        height: 35vh; }
-      .productos .planesContainer .planes .btn {
-        border: none;
-        border-radius: 8px;
-        padding: 2%;
-        text-align: center;
-        width: 40vw; }
-        .productos .planesContainer .planes .btn:hover {
-          box-shadow: inset 40vw 0 0 0 #3B4472; }
+  .productos .contenedorCard .planesCard {
+    width: 63vw;
+    padding: 1.5%; }
+    .productos .contenedorCard .planesCard img {
+      height: 40vh; }
+    .productos .contenedorCard .planesCard .planTitulo {
+      font-size: 1rem; }
+    .productos .contenedorCard .planesCard .planDescripcion {
+      font-size: 1rem;
+      padding: 0 1% 8%;
+      margin: 0; }
+    .productos .contenedorCard .planesCard .btn {
+      border: none;
+      border-radius: 8px;
+      padding: 2%;
+      text-align: center;
+      width: 35vw; }
+      .productos .contenedorCard .planesCard .btn:hover {
+        box-shadow: inset 35vw 0 0 0 #3B4472; }
   /* SECCION 4 FOOTER */
   .footer .contenedorContacto .contactame {
     padding-top: 15%;
@@ -513,7 +540,7 @@
     .footer .contenedorContacto .infocliente h2 {
       font-size: 1.125rem;
       text-align: center;
-      padding: 1%;
+      margin-top: 1%;
       margin: 0; }
     .footer .contenedorContacto .infocliente .form input {
       width: 60vw;
@@ -558,7 +585,7 @@
   .PlanesDeEntrenamiento .ContenedorPDE {
     margin-top: 8%; }
     .PlanesDeEntrenamiento .ContenedorPDE .planesDetalles {
-      height: 70vh;
+      height: 75vh;
       margin-top: 12%; }
       .PlanesDeEntrenamiento .ContenedorPDE .planesDetalles .nombrePlan {
         font-size: 1rem;

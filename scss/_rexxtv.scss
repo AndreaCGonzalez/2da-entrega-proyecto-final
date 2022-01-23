@@ -2,23 +2,24 @@
 /*RexxTV*/
 .rexxtv{
     margin-top:15%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items:center;
+    @include flex (flex, row, center, space-evenly);
 
-    .rTVtitulo{
-        @include bio(center, $size36, $letraZpezial);
-        font-family: 'Righteous', cursive;
-        padding-bottom: 3%;
+    .rexxtvTexto{
+        @include flex (flex, column, center, center);
+        width:50vw;
+
+        .rextvTit{
+            @include textocard($size26, center, 4%);
+            color: $letraZpezial;
+        }
+    
+        .rextvdesc{
+            @include textocard($size24, center, 10%);
+            color: $letraZpezial;
+        }
+
+        .btn{
+            margin-top: 10%;
+        }
     }
-
-    .rexxtvImagen{
-        width: 70%;
-    }
-
-    .rexxtvImgMobile{
-        display: none;
-    }
-
 }

@@ -27,30 +27,32 @@
             font-size: $size20;
         }
 
-        .planesContainer{
-            padding-top: 10%;
-            
-            .planes{
-                width: 45vw;
-                border-radius: 12px;
-                margin-bottom: 12%;
+        .contenedorCard{
+            .planesCard{
+                width: 48vw;
+                padding: 1.2%;
 
                 img{
-                    height: 50vh;
+                    height: 45vh;
                 }
 
-            .planDescripcion{
-                font-size: $size16;
-            }
+                .planTitulo{
+                    font-size: $size16;
+                }
 
+                .planDescripcion{
+                    font-size: $size16;
+                    padding: 0 2% 8%;
+                    margin: 0;
+                }
 
                 .btn{
-                    @include btn(none,8px, 2%, center, 30vw);
-    
+                    @include btn(none,8px, 2%, center, 24vw);         
+        
                     &:hover{           
-                        box-shadow: inset 30vw 0 0 0 $colorAlt;
-                    }
-                }
+                        box-shadow: inset 24vw 0 0 0 $colorAlt;
+                    } 
+                } 
             }
         }
     }
@@ -206,29 +208,36 @@
 
      /* SECCION 1 PRODUCTOS */
      .productos{    
-
         .prodTitulo{
             font-size: $size16;
         }
 
-        .planesContainer{
-            padding-top: 10%;
-
-            .planes{
-                margin-bottom: 13%;
-                width: 75vw;
+        .contenedorCard{
+            .planesCard{
+                width: 63vw;
+                padding: 1.5%;
 
                 img{
-                     height: 35vh;
+                    height: 40vh;
+                }
+
+                .planTitulo{
+                    font-size: $size16;
+                }
+
+                .planDescripcion{
+                    font-size: $size16;
+                    padding: 0 1% 8%;
+                    margin: 0;
                 }
 
                 .btn{
-                    @include btn(none,8px, 2%, center, 40vw);
-    
+                    @include btn(none,8px, 2%, center, 35vw);         
+        
                     &:hover{           
-                        box-shadow: inset 40vw 0 0 0 $colorAlt;
-                    }
-                }
+                        box-shadow: inset 35vw 0 0 0 $colorAlt;
+                    } 
+                } 
             }
         }
     }
@@ -335,7 +344,7 @@
             margin-top: 8%;
 
             .planesDetalles{
-                height: 70vh;
+                height: 75vh;
                 margin-top: 12%;
     
                 .nombrePlan{
