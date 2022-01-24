@@ -62,7 +62,7 @@
         text-align: center;
         margin-top: inherit;
         padding: 4% 2% 6%; }
-      .productos .contenedorCard .planesCard .btn {
+      .productos .contenedorCard .planesCard .boton {
         border: none;
         border-radius: 8px;
         padding: 2%;
@@ -74,10 +74,10 @@
         color: #003E00;
         margin: 0 auto;
         display: block; }
-        .productos .contenedorCard .planesCard .btn:hover {
+        .productos .contenedorCard .planesCard .boton:hover {
           box-shadow: inset 12vw 0 0 0 #3B4472;
           color: #D6FADB; }
-        .productos .contenedorCard .planesCard .btn a {
+        .productos .contenedorCard .planesCard .boton a {
           font-weight: 501; }
 
 /*RexxTV*/
@@ -86,25 +86,40 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-evenly; }
+  justify-content: center;
+  justify-items: center; }
   .rexxtv .rexxtvTexto {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 50vw; }
+    width: 40vw;
+    height: 70vh; }
     .rexxtv .rexxtvTexto .rextvTit {
-      font-size: 1.625rem;
+      font-size: 1.875rem;
       text-align: center;
       margin-top: 4%;
-      color: #D6FADB; }
+      color: #D6FADB;
+      text-decoration: underline; }
     .rexxtv .rexxtvTexto .rextvdesc {
-      font-size: 1.5rem;
+      font-size: 1.75rem;
       text-align: center;
       margin-top: 10%;
       color: #D6FADB; }
-    .rexxtv .rexxtvTexto .btn {
+    .rexxtv .rexxtvTexto .boton {
+      border: none;
+      border-radius: 8px;
+      padding: 1%;
+      text-align: center;
+      width: 10vw;
+      box-shadow: inset 0 0 0 0 #D6FADB;
+      transition: ease-in-out 0.3s;
+      background-color: #00C85F;
+      color: #D6FADB;
       margin-top: 10%; }
+      .rexxtv .rexxtvTexto .boton:hover {
+        box-shadow: inset 10vw 0 0 0 #3B4472;
+        color: #D6FADB; }
 
 /*CONTACTO*/
 .footer {
@@ -157,7 +172,7 @@
           font-size: 0.75rem;
           border-radius: 7px;
           border: none; }
-      .footer .contenedorContacto .infocliente .btn {
+      .footer .contenedorContacto .infocliente .boton {
         border: none;
         border-radius: 8px;
         padding: 1%;
@@ -168,7 +183,7 @@
         background-color: #3B4472;
         color: #D6FADB;
         margin: 2% 0; }
-        .footer .contenedorContacto .infocliente .btn:hover {
+        .footer .contenedorContacto .infocliente .boton:hover {
           box-shadow: inset 10vw 0 0 0 #D6FADB;
           color: #2f3658; }
     .footer .contenedorContacto .contactoRedes {
@@ -271,13 +286,13 @@
   /* SECCION 4 FOOTER */
   .footer .contenedorContacto .infocliente .form input {
     width: 18vw; }
-  .footer .contenedorContacto .infocliente .btn {
+  .footer .contenedorContacto .infocliente .boton {
     border: none;
     border-radius: 8px;
     padding: 1%;
     text-align: center;
     width: 12vw; }
-    .footer .contenedorContacto .infocliente .btn:hover {
+    .footer .contenedorContacto .infocliente .boton:hover {
       box-shadow: inset 12vw 0 0 0 #D6FADB; }
   /* SOBRE MI */
   .contenedor .contenedorBiografia {
@@ -294,10 +309,9 @@
     width: 24vw;
     padding: 0.6%; }
   /* SECCION 3 REXXTV */
-  .rexxtv {
-    margin: 12% 0; }
-    .rexxtv .rexxtvImagen {
-      width: 75%; }
+  /*REXXTV*/
+  .rexxtv .tutemplo {
+    width: 40vw; }
   /* SECCION 4 FOOTER */
   .footer .contenedorContacto .infocliente .form input {
     width: 21vw; }
@@ -339,28 +353,43 @@
         font-size: 1.25rem; }
       .productos .contenedorCard .planesCard .planDescripcion {
         font-size: 1.25rem; }
-      .productos .contenedorCard .planesCard .btn {
+      .productos .contenedorCard .planesCard .boton {
         border: none;
         border-radius: 8px;
         padding: 2%;
         text-align: center;
         width: 23vw; }
-        .productos .contenedorCard .planesCard .btn:hover {
+        .productos .contenedorCard .planesCard .boton:hover {
           box-shadow: inset 23vw 0 0 0 #3B4472; }
-  /* SECCION REXXTV */
-  .rexxtv .rexxtvImagen {
-    width: 85%; }
+  /*REXXTV*/
+  .rexxtv .tutemplo {
+    width: 40vw; }
+  .rexxtv .rexxtvTexto {
+    width: 50vw;
+    height: 38vh; }
+    .rexxtv .rexxtvTexto .rextvTit {
+      font-size: 1.625rem; }
+    .rexxtv .rexxtvTexto .rextvdesc {
+      font-size: 1.5rem; }
+    .rexxtv .rexxtvTexto .boton {
+      border: none;
+      border-radius: 8px;
+      padding: 1%;
+      text-align: center;
+      width: 12vw; }
+      .rexxtv .rexxtvTexto .boton:hover {
+        box-shadow: inset 12vw 0 0 0 #3B4472; }
   /* SECCION 4 FOOTER */
   .footer .contenedorContacto .infocliente .form input {
     width: 27vw;
     height: 3vh; }
-  .footer .contenedorContacto .infocliente .btn {
+  .footer .contenedorContacto .infocliente .boton {
     border: none;
     border-radius: 8px;
     padding: 1%;
     text-align: center;
     width: 16vw; }
-    .footer .contenedorContacto .infocliente .btn:hover {
+    .footer .contenedorContacto .infocliente .boton:hover {
       box-shadow: inset 16vw 0 0 0 #D6FADB; }
   /* SOBRE MI */
   .contenedor .contenedorBiografia {
@@ -416,20 +445,37 @@
       font-size: 1rem;
       padding: 0 2% 8%;
       margin: 0; }
-    .productos .contenedorCard .planesCard .btn {
+    .productos .contenedorCard .planesCard .boton {
       border: none;
       border-radius: 8px;
       padding: 2%;
       text-align: center;
       width: 24vw; }
-      .productos .contenedorCard .planesCard .btn:hover {
+      .productos .contenedorCard .planesCard .boton:hover {
         box-shadow: inset 24vw 0 0 0 #3B4472; }
-  /* SECCION REXXTV */
-  .rexxtv .rexxtvImagen {
-    display: none; }
-  .rexxtv .rexxtvImgMobile {
-    display: initial;
-    width: 90%; }
+  /*REXXTV*/
+  .rexxtv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+    .rexxtv .tutemplo {
+      width: 50vw; }
+    .rexxtv .rexxtvTexto {
+      width: 50vw;
+      height: 80vh; }
+      .rexxtv .rexxtvTexto .rextvTit {
+        font-size: 1.375rem; }
+      .rexxtv .rexxtvTexto .rextvdesc {
+        font-size: 1.25rem; }
+      .rexxtv .rexxtvTexto .boton {
+        border: none;
+        border-radius: 8px;
+        padding: 1%;
+        text-align: center;
+        width: 20vw; }
+        .rexxtv .rexxtvTexto .boton:hover {
+          box-shadow: inset 20vw 0 0 0 #3B4472; }
   /* FOOTER */
   .footer .contenedorContacto {
     display: flex;
@@ -452,13 +498,13 @@
       .footer .contenedorContacto .infocliente .form input {
         width: 43vw;
         height: 10vh; }
-      .footer .contenedorContacto .infocliente .btn {
+      .footer .contenedorContacto .infocliente .boton {
         border: none;
         border-radius: 8px;
         padding: 1%;
         text-align: center;
         width: 28vw; }
-        .footer .contenedorContacto .infocliente .btn:hover {
+        .footer .contenedorContacto .infocliente .boton:hover {
           box-shadow: inset 28vw 0 0 0 #D6FADB; }
     .footer .contenedorContacto .contactoRedes {
       width: 35vw;
@@ -521,14 +567,32 @@
       font-size: 1rem;
       padding: 0 1% 8%;
       margin: 0; }
-    .productos .contenedorCard .planesCard .btn {
+    .productos .contenedorCard .planesCard .boton {
       border: none;
       border-radius: 8px;
       padding: 2%;
       text-align: center;
       width: 35vw; }
-      .productos .contenedorCard .planesCard .btn:hover {
+      .productos .contenedorCard .planesCard .boton:hover {
         box-shadow: inset 35vw 0 0 0 #3B4472; }
+  /*REXXTV*/
+  .rexxtv .tutemplo {
+    width: 70vw; }
+  .rexxtv .rexxtvTexto {
+    width: 70vw;
+    height: 50vh; }
+    .rexxtv .rexxtvTexto .rextvTit {
+      font-size: 1.25rem; }
+    .rexxtv .rexxtvTexto .rextvdesc {
+      font-size: 1.125rem; }
+    .rexxtv .rexxtvTexto .boton {
+      border: none;
+      border-radius: 8px;
+      padding: 1%;
+      text-align: center;
+      width: 25vw; }
+      .rexxtv .rexxtvTexto .boton:hover {
+        box-shadow: inset 25vw 0 0 0 #3B4472; }
   /* SECCION 4 FOOTER */
   .footer .contenedorContacto .contactame {
     padding-top: 15%;
@@ -545,13 +609,13 @@
     .footer .contenedorContacto .infocliente .form input {
       width: 60vw;
       height: 7vh; }
-    .footer .contenedorContacto .infocliente .btn {
+    .footer .contenedorContacto .infocliente .boton {
       border: none;
       border-radius: 8px;
       padding: 1%;
       text-align: center;
       width: 35vw; }
-      .footer .contenedorContacto .infocliente .btn:hover {
+      .footer .contenedorContacto .infocliente .boton:hover {
         box-shadow: inset 35vw 0 0 0 #D6FADB; }
   .footer .contenedorContacto .contactoRedes {
     width: 42vw;

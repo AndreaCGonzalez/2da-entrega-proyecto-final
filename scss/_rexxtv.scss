@@ -2,24 +2,37 @@
 /*RexxTV*/
 .rexxtv{
     margin-top:15%;
-    @include flex (flex, row, center, space-evenly);
+    @include flex (flex, row, center, center);
+    justify-items: center;
 
     .rexxtvTexto{
         @include flex (flex, column, center, center);
-        width:50vw;
+        width:40vw;
+        height: 70vh;
 
         .rextvTit{
-            @include textocard($size26, center, 4%);
+            @include textocard($size30, center, 4%);
             color: $letraZpezial;
+            text-decoration: underline;
         }
     
         .rextvdesc{
-            @include textocard($size24, center, 10%);
+            @include textocard($size28, center, 10%);
             color: $letraZpezial;
         }
 
-        .btn{
-            margin-top: 10%;
+        .boton{
+            @include btn(none,8px, 1%, center, 10vw);
+            box-shadow: inset 0 0 0 0 $letraZpezial;
+            transition: ease-in-out 0.3s;
+            background-color: $colorDetashes;
+            color: $letraZpezial;
+            margin-top: 10%;          
+   
+            &:hover{           
+                box-shadow: inset 10vw 0 0 0 $colorAlt;
+                color: $letraZpezial;
+            }
         }
     }
 }

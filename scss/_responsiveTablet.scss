@@ -24,7 +24,7 @@
                     }
                 }
 
-                .btn{
+                .boton{
                     @include btn(none,8px, 1%, center, 12vw);
 
                     &:hover{           
@@ -73,12 +73,12 @@
 
         
     /* SECCION 3 REXXTV */
+    /*REXXTV*/
     .rexxtv{
-        margin: 12% 0;
-        .rexxtvImagen{
-            width: 75%;
+        .tutemplo{
+            width: 40vw;
         }
-    } 
+    }
 
     /* SECCION 4 FOOTER */
     .footer{
@@ -176,7 +176,7 @@
                     font-size: $size20;
                 }
             
-                .btn{
+                .boton{
                     @include btn(none,8px, 2%, center, 23vw);
 
                     &:hover{           
@@ -189,11 +189,32 @@
    
 
     
-    /* SECCION REXXTV */
+    /*REXXTV*/
     .rexxtv{
-        .rexxtvImagen{
-            width: 85%;
-        }   
+        .tutemplo{
+            width: 40vw;
+        }
+
+        .rexxtvTexto{
+            width:50vw;
+            height: 38vh;
+
+            .rextvTit{
+                font-size: $size26;
+            }
+
+            .rextvdesc{
+                font-size: $size24;
+            }
+
+            .boton{
+                @include btn(none,8px, 1%, center, 12vw);
+
+                &:hover{           
+                    box-shadow: inset 12vw 0 0 0 $colorAlt;
+                }
+            }
+        }
     }
     
 
@@ -208,7 +229,7 @@
                     }
                 }
 
-                .btn{
+                .boton{
                     @include btn(none,8px, 1%, center, 16vw);
 
                     &:hover{           

@@ -46,7 +46,7 @@
                     margin: 0;
                 }
 
-                .btn{
+                .boton{
                     @include btn(none,8px, 2%, center, 24vw);         
         
                     &:hover{           
@@ -59,16 +59,33 @@
    
 
     
-    /* SECCION REXXTV */
-    .rexxtv{   
+      /*REXXTV*/
+      .rexxtv{
+        @include flex (flex, column, center, center);
 
-        .rexxtvImagen{
-            display: none;
+        .tutemplo{
+            width: 50vw;
         }
-        
-        .rexxtvImgMobile{
-            display:initial;
-            width: 90%;
+
+        .rexxtvTexto{
+            width:50vw;
+            height: 80vh;
+
+            .rextvTit{
+                font-size: $size22;
+            }
+
+            .rextvdesc{
+                font-size: $size20;
+            }
+
+            .boton{
+                @include btn(none,8px, 1%, center, 20vw);
+
+                &:hover{           
+                    box-shadow: inset 20vw 0 0 0 $colorAlt;
+                }
+            }
         }
     }
     
@@ -103,7 +120,7 @@
                     }
                 }
 
-                .btn{
+                .boton{
                     @include btn(none,8px, 1%, center, 28vw);
 
                     &:hover{           
@@ -231,7 +248,7 @@
                     margin: 0;
                 }
 
-                .btn{
+                .boton{
                     @include btn(none,8px, 2%, center, 35vw);         
         
                     &:hover{           
@@ -242,6 +259,33 @@
         }
     }
 
+     /*REXXTV*/
+     .rexxtv{
+        .tutemplo{
+            width: 70vw;
+        }
+
+        .rexxtvTexto{
+            width: 70vw;
+            height: 50vh;
+
+            .rextvTit{
+                font-size: $size20;
+            }
+
+            .rextvdesc{
+                font-size: $size18;
+            }
+
+            .boton{
+                @include btn(none,8px, 1%, center, 25vw);
+
+                &:hover{           
+                    box-shadow: inset 25vw 0 0 0 $colorAlt;
+                }
+            }
+        }
+    }
 
     /* SECCION 4 FOOTER */
     
@@ -272,7 +316,7 @@
                     }
                 }
 
-                .btn{
+                .boton{
                     @include btn(none,8px, 1%, center, 35vw);
 
                     &:hover{           

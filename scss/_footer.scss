@@ -57,7 +57,7 @@
                 }
             }
 
-            .btn{
+            .boton{
                 @include btn(none,8px, 1%, center, 10vw);
                 box-shadow: inset 0 0 0 0 $letraZpezial;
                 transition: ease-in-out 0.3s;
